@@ -1,0 +1,800 @@
+fileFormatVersion: 2
+guid: b6fb848cb7743124798da8ea42d037d9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d892f05b9f2823e449d7eda9b6f9e235
+      internalID: 1577024479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_1
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e695836d01083046a6deb6a9aea13cf
+      internalID: 1214305661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_2
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0274bc6521ab9c5489c7cb7a58e5f579
+      internalID: 73967343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_3
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5dcf6f25c4844143ab2d299bbf44459
+      internalID: 1624158021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_4
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90e3b12991f4a14a92084719b4226e5
+      internalID: 371192790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_5
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d4f112f9d54df468c955e1b2dba6a7
+      internalID: -1662129957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_6
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12680353582c4a64d8f5dcdf2bcace31
+      internalID: 954861427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_7
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68458a3972edfa8439f9097a86aa0b83
+      internalID: -2125023642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_8
+      rect:
+        serializedVersion: 2
+        x: 2154
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b14066458881449be3a7410b3d855f
+      internalID: -29691012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_9
+      rect:
+        serializedVersion: 2
+        x: 2423
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452ac04dafade444a85bb30500ee30eb
+      internalID: -680272068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_10
+      rect:
+        serializedVersion: 2
+        x: 2691
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1cd2b023e43b3b4b97bb2415b67ef58
+      internalID: 1972426752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_11
+      rect:
+        serializedVersion: 2
+        x: 2960
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477ddb97d87b8ac41bc0aa7edba2cf16
+      internalID: 1310044329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_12
+      rect:
+        serializedVersion: 2
+        x: 3229
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef64f3b9676cf484c925284374a0d7da
+      internalID: 553261083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_13
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152f1cf7cc577554597a40895f3534b9
+      internalID: 557318045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_14
+      rect:
+        serializedVersion: 2
+        x: 3764
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abac7706926b8da40b15302f32d83830
+      internalID: -1941077440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_15
+      rect:
+        serializedVersion: 2
+        x: 4032
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d731e2f149e157e4facf669e034bacb7
+      internalID: 1896795198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_16
+      rect:
+        serializedVersion: 2
+        x: 4301
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309ce7837914a724d9f48be9b6e03845
+      internalID: 1211610850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_17
+      rect:
+        serializedVersion: 2
+        x: 4570
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc5af22ccd86ff40b62910a56de23d9
+      internalID: 156405711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_18
+      rect:
+        serializedVersion: 2
+        x: 4839
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8735f678d9b4ad045a4fcdeb84970d4d
+      internalID: -546407204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_19
+      rect:
+        serializedVersion: 2
+        x: 5108
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4442b7d964a810f46ae36f13ece4e5f7
+      internalID: -571900686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_20
+      rect:
+        serializedVersion: 2
+        x: 5377
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db03ca39d1fe46f489afc4ec53624930
+      internalID: -184434039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_21
+      rect:
+        serializedVersion: 2
+        x: 5643
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea84a06ced352514aa3db2e8fe3e5cb6
+      internalID: -725425611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_22
+      rect:
+        serializedVersion: 2
+        x: 5911
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02fb9a7dfb48a34c9aa2110edb758fd
+      internalID: -2074761172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_23
+      rect:
+        serializedVersion: 2
+        x: 6180
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b6f5f7f56f814409e85d3515909098
+      internalID: -441656307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_24
+      rect:
+        serializedVersion: 2
+        x: 6449
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78922c7b512532a46a86c5760c08c676
+      internalID: 1274732752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_25
+      rect:
+        serializedVersion: 2
+        x: 6718
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4442cc1e4f603bc44a7ba20bbc438a87
+      internalID: -361188065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_26
+      rect:
+        serializedVersion: 2
+        x: 6983
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715078e01090b26429cb21ddf6c5207b
+      internalID: -1592927713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_27
+      rect:
+        serializedVersion: 2
+        x: 7252
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d49265d1a47db643a67c60b86276a4a
+      internalID: 788076017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_28
+      rect:
+        serializedVersion: 2
+        x: 7521
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf26be8805be4345bf1c65de653c1b2
+      internalID: -1339360997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-walkCycle_29
+      rect:
+        serializedVersion: 2
+        x: 7786
+        y: 14
+        width: 264
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5bb9e1d84020647967faf84832be1f
+      internalID: -591043476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Alice_RHS-walkCycle_0: 1577024479
+      Alice_RHS-walkCycle_1: 1214305661
+      Alice_RHS-walkCycle_10: 1972426752
+      Alice_RHS-walkCycle_11: 1310044329
+      Alice_RHS-walkCycle_12: 553261083
+      Alice_RHS-walkCycle_13: 557318045
+      Alice_RHS-walkCycle_14: -1941077440
+      Alice_RHS-walkCycle_15: 1896795198
+      Alice_RHS-walkCycle_16: 1211610850
+      Alice_RHS-walkCycle_17: 156405711
+      Alice_RHS-walkCycle_18: -546407204
+      Alice_RHS-walkCycle_19: -571900686
+      Alice_RHS-walkCycle_2: 73967343
+      Alice_RHS-walkCycle_20: -184434039
+      Alice_RHS-walkCycle_21: -725425611
+      Alice_RHS-walkCycle_22: -2074761172
+      Alice_RHS-walkCycle_23: -441656307
+      Alice_RHS-walkCycle_24: 1274732752
+      Alice_RHS-walkCycle_25: -361188065
+      Alice_RHS-walkCycle_26: -1592927713
+      Alice_RHS-walkCycle_27: 788076017
+      Alice_RHS-walkCycle_28: -1339360997
+      Alice_RHS-walkCycle_29: -591043476
+      Alice_RHS-walkCycle_3: 1624158021
+      Alice_RHS-walkCycle_4: 371192790
+      Alice_RHS-walkCycle_5: -1662129957
+      Alice_RHS-walkCycle_6: 954861427
+      Alice_RHS-walkCycle_7: -2125023642
+      Alice_RHS-walkCycle_8: -29691012
+      Alice_RHS-walkCycle_9: -680272068
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

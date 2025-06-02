@@ -1,0 +1,954 @@
+fileFormatVersion: 2
+guid: 83be8ffd2674ff5478e814887ab7bb56
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1100
+        width: 257
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 116d9c6dab5db884aa3be3f0b56377fa
+      internalID: 1724775046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_1
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1100
+        width: 257
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4cde6e8b7739e41a3b357ed61bd63e
+      internalID: 1289759336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_2
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 1100
+        width: 257
+        height: 453
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1671a380f7e8128488e011928a697c4f
+      internalID: -1001000622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_3
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1100
+        width: 255
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2105de342eb12c94ea55df60b45d7f1e
+      internalID: 1351556421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_4
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 1100
+        width: 257
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d578cb786be8b45bac20a073276e68
+      internalID: -788703812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_5
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 1100
+        width: 256
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9e3e55603ca9e47a0e2462d40b9851
+      internalID: 47105635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_6
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 1100
+        width: 257
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f7a6c3e6515d341a1d7506a07cf64d
+      internalID: 1755247977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1100
+        width: 257
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20d08b20b3f920459f29da8d34ffd22
+      internalID: -185637048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_8
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 1100
+        width: 257
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a662a8681b31b5945aee19832db31ee6
+      internalID: -592547912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_9
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 1100
+        width: 255
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220e89f489a639a43ac8a65b542c10e5
+      internalID: -2033645952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_10
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 1100
+        width: 255
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99074aef177121f4b9ca07ba9fabe75f
+      internalID: -401146550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_11
+      rect:
+        serializedVersion: 2
+        x: 3005
+        y: 1100
+        width: 255
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00475b977cb769b468cf9171edc69aaa
+      internalID: 1148897063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_12
+      rect:
+        serializedVersion: 2
+        x: 3273
+        y: 1100
+        width: 257
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9584c0e5afbdf94cb0ea41dc93bf8c8
+      internalID: 1003563043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_13
+      rect:
+        serializedVersion: 2
+        x: 3543
+        y: 1100
+        width: 268
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188fcfe85f0974e40a3744fec628f826
+      internalID: 457850804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_14
+      rect:
+        serializedVersion: 2
+        x: 3824
+        y: 1100
+        width: 284
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9389926292f5ec4980daa152e2f4f96
+      internalID: -223420585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_15
+      rect:
+        serializedVersion: 2
+        x: 4123
+        y: 1100
+        width: 292
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16778c5802fe25c4e8b8642d48468651
+      internalID: -276303681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_16
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 559
+        width: 301
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9ff3324a59d844b96a09c60b4c9b2b
+      internalID: 1093491670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_17
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 559
+        width: 299
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a59ce2816f1434287b7790241af328
+      internalID: -1742960681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_18
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 559
+        width: 298
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f177f70a6470940b1932320679d3c5
+      internalID: 1629361067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_19
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 559
+        width: 301
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550d952783e2f8244832498f87111d0f
+      internalID: -679059355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_20
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 559
+        width: 294
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41297ce9254faa439aecb32b126407f
+      internalID: -2122243615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_21
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 559
+        width: 284
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ca25db4f3d24c4281df28e95eebd4e
+      internalID: 1553952254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_22
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 559
+        width: 268
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2bfc018cbd16154c8e3850c8f2d1442
+      internalID: 449996654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_23
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 557
+        width: 257
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb425d691f065e479023d70f1ed1ada
+      internalID: 1018261058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_24
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 559
+        width: 257
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c9e73afaf83624f840a783a160987d
+      internalID: 1319761113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_25
+      rect:
+        serializedVersion: 2
+        x: 2651
+        y: 559
+        width: 255
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80fa5041136ef642818fd37014b5c24
+      internalID: 1599840319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_26
+      rect:
+        serializedVersion: 2
+        x: 2941
+        y: 559
+        width: 255
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803e9e50ed9554a45b46c81b4eb24635
+      internalID: 157615211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_27
+      rect:
+        serializedVersion: 2
+        x: 3231
+        y: 559
+        width: 255
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8212fd2189364b429b6cce0edfc03b1
+      internalID: 1541111542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_28
+      rect:
+        serializedVersion: 2
+        x: 3512
+        y: 559
+        width: 257
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09eebb72d868f4643ad3ab17f6b366b1
+      internalID: 510477117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_29
+      rect:
+        serializedVersion: 2
+        x: 3813
+        y: 559
+        width: 256
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1cf6ff36e08f0439b9d9018a9ccb7b
+      internalID: 455428644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_30
+      rect:
+        serializedVersion: 2
+        x: 4097
+        y: 559
+        width: 255
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59c89d3eb2d23994a82a7e9125ed5a31
+      internalID: -97698486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_31
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 47
+        width: 257
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b5438ac2b19a7541865cbd6fe60b4a7
+      internalID: -1723124849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_32
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 47
+        width: 255
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a7c19779cf74b4f91693455171caef
+      internalID: 1806333621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_33
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 47
+        width: 254
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2db3117e8c5cb64a953e775122353ca
+      internalID: -1885820694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_34
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 47
+        width: 257
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0240c6c2fa4f3540be40275469179fe
+      internalID: -226819702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_35
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 47
+        width: 257
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a4a6cd7a868fb448076516596d7444
+      internalID: 1345818683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-Jump_36
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 47
+        width: 257
+        height: 453
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912b3d649b6431540a0c8c363c33a500
+      internalID: 1839587391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Alice_RHS-Jump_0: 1724775046
+      Alice_RHS-Jump_1: 1289759336
+      Alice_RHS-Jump_10: -401146550
+      Alice_RHS-Jump_11: 1148897063
+      Alice_RHS-Jump_12: 1003563043
+      Alice_RHS-Jump_13: 457850804
+      Alice_RHS-Jump_14: -223420585
+      Alice_RHS-Jump_15: -276303681
+      Alice_RHS-Jump_16: 1093491670
+      Alice_RHS-Jump_17: -1742960681
+      Alice_RHS-Jump_18: 1629361067
+      Alice_RHS-Jump_19: -679059355
+      Alice_RHS-Jump_2: -1001000622
+      Alice_RHS-Jump_20: -2122243615
+      Alice_RHS-Jump_21: 1553952254
+      Alice_RHS-Jump_22: 449996654
+      Alice_RHS-Jump_23: 1018261058
+      Alice_RHS-Jump_24: 1319761113
+      Alice_RHS-Jump_25: 1599840319
+      Alice_RHS-Jump_26: 157615211
+      Alice_RHS-Jump_27: 1541111542
+      Alice_RHS-Jump_28: 510477117
+      Alice_RHS-Jump_29: 455428644
+      Alice_RHS-Jump_3: 1351556421
+      Alice_RHS-Jump_30: -97698486
+      Alice_RHS-Jump_31: -1723124849
+      Alice_RHS-Jump_32: 1806333621
+      Alice_RHS-Jump_33: -1885820694
+      Alice_RHS-Jump_34: -226819702
+      Alice_RHS-Jump_35: 1345818683
+      Alice_RHS-Jump_36: 1839587391
+      Alice_RHS-Jump_4: -788703812
+      Alice_RHS-Jump_5: 47105635
+      Alice_RHS-Jump_6: 1755247977
+      Alice_RHS-Jump_7: -185637048
+      Alice_RHS-Jump_8: -592547912
+      Alice_RHS-Jump_9: -2033645952
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

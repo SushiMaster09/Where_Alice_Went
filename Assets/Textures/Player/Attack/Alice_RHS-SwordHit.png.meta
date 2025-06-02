@@ -1,0 +1,404 @@
+fileFormatVersion: 2
+guid: c683945ba44d2234aafa9c6f8725aead
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Alice_RHS-SwordHit_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 33
+        width: 313
+        height: 612
+      alignment: 9
+      pivot: {x: 0.3955808, y: 0.38990918}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1047ddbcb0ccd448abcde6044c914a
+      internalID: 1556189893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-SwordHit_1
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 33
+        width: 338
+        height: 612
+      alignment: 9
+      pivot: {x: 0.3706136, y: 0.3765776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f85a8c58c40ded439fa949b778f74fb
+      internalID: -336322011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-SwordHit_2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 33
+        width: 349
+        height: 612
+      alignment: 9
+      pivot: {x: 0.62220097, y: 0.39572892}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7182b4aa15ca7f241818b23769817dac
+      internalID: 1285667457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-SwordHit_3
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 33
+        width: 256
+        height: 612
+      alignment: 9
+      pivot: {x: 0.47579718, y: 0.39302972}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390b2348658c113428225c727a4c7fb4
+      internalID: 1429159492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-SwordHit_4
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 33
+        width: 276
+        height: 612
+      alignment: 9
+      pivot: {x: 0.44144562, y: 0.38130307}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f1175c6c7f78a4f84f98e8f55a0c44
+      internalID: 706251068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-SwordHit_5
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 440
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e73f7793f8d6341b0f354cbc0bd84a
+      internalID: -2049104964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-SwordHit_6
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 33
+        width: 307
+        height: 612
+      alignment: 9
+      pivot: {x: 0.40043595, y: 0.37455377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eebc1261cb509c547ab6989056fd0684
+      internalID: -499494492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-SwordHit_7
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 33
+        width: 340
+        height: 612
+      alignment: 9
+      pivot: {x: 0.3713738, y: 0.37337235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f767938a2d8a28847bcf7fc44463b618
+      internalID: -1615333994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-SwordHit_8
+      rect:
+        serializedVersion: 2
+        x: 2393
+        y: 33
+        width: 400
+        height: 612
+      alignment: 9
+      pivot: {x: 0.31244507, y: 0.36392373}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9adccf645098d488a960b173985795
+      internalID: -502628460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-SwordHit_9
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 33
+        width: 327
+        height: 612
+      alignment: 9
+      pivot: {x: 0.3758922, y: 0.37674704}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d40f68a49711c46bdc0fa2e22eaf7e
+      internalID: 325712072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-SwordHit_10
+      rect:
+        serializedVersion: 2
+        x: 3152
+        y: 33
+        width: 313
+        height: 612
+      alignment: 9
+      pivot: {x: 0.39690012, y: 0.3998637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db03242fc3cea2443bba89507b87487f
+      internalID: 2011221533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alice_RHS-SwordHit_11
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 440
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1718d3f16906c4438539d3b7ec31a6f
+      internalID: -541815483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Alice_RHS-SwordHit_0: 1556189893
+      Alice_RHS-SwordHit_1: -336322011
+      Alice_RHS-SwordHit_10: 2011221533
+      Alice_RHS-SwordHit_11: -541815483
+      Alice_RHS-SwordHit_2: 1285667457
+      Alice_RHS-SwordHit_3: 1429159492
+      Alice_RHS-SwordHit_4: 706251068
+      Alice_RHS-SwordHit_5: -2049104964
+      Alice_RHS-SwordHit_6: -499494492
+      Alice_RHS-SwordHit_7: -1615333994
+      Alice_RHS-SwordHit_8: -502628460
+      Alice_RHS-SwordHit_9: 325712072
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
