@@ -230,7 +230,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -415.2001, y: -338}
+  m_AnchoredPosition: {x: -504, y: -107}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &393929978
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -370,7 +370,7 @@ MonoBehaviour:
   hasEmotionTag: 0
   isTyping: 0
   fading: 0
-  JSONAsset: {fileID: 4900000, guid: 6fdd3757d8d3ec54b9ceee586080300e, type: 3}
+  JSONAsset: {fileID: 4900000, guid: 2ef3dff43934146c8b550ae813f46b30, type: 3}
   canvasGroup2: {fileID: 1035403993}
   audioSource: {fileID: 421530173}
   audioSource2: {fileID: 421530174}
@@ -413,6 +413,8 @@ MonoBehaviour:
   - {fileID: 4160719240836635890, guid: eb2d0dc4439d3cf4dba584418eca9ab1, type: 3}
   - {fileID: -6745276584779271271, guid: d4031882a022df1419d99e4a96df1dd6, type: 3}
   - {fileID: 5265465628892433597, guid: 7c626fa4d510a6d47a10879f7ae4de21, type: 3}
+  - {fileID: 1049418318637963720, guid: d3979ac845b899a429ef6cefd96ed853, type: 3}
+  - {fileID: 6840857970483876212, guid: 6e7d422079e6721449d733607a7c6e51, type: 3}
   fadeinAnimator: {fileID: 474015069}
   audioClips:
   - {fileID: 8300000, guid: 8bb25bc2eb8b0e6499f4dafef103f025, type: 3}
@@ -722,7 +724,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -59698365
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
@@ -946,7 +948,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 358951805
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1002,14 +1004,14 @@ RectTransform:
   m_GameObject: {fileID: 924927037}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.03, z: 12.5}
+  m_LocalScale: {x: 1.8712499, y: 2.2240572, z: 15.593749}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1035403992}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.000015258789, y: 141}
+  m_AnchoredPosition: {x: 0.000015258789, y: 182}
   m_SizeDelta: {x: 819.741, y: 284.271}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &924927039
@@ -1092,7 +1094,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -59698365
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 10
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1383,25 +1385,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_MoveRepeatDelay: 0.5
-  m_MoveRepeatRate: 0.1
-  m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_DeselectOnBackgroundClick: 1
-  m_PointerBehavior: 0
-  m_CursorLockBehavior: 0
-  m_ScrollDeltaPerTick: 6
 --- !u!114 &1058641803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1587,7 +1570,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 33, y: -409.5}
+  m_AnchoredPosition: {x: 33, y: -463}
   m_SizeDelta: {x: 1062.514, y: 113.455}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1375392471
@@ -1675,7 +1658,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -16.249146, y: 0, z: -12.556091, w: -5.908806}
+  m_margin: {x: -16.249146, y: -216.95596, z: 6.4474487, w: 32.098045}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1798,7 +1781,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 146.743, y: 13.99}
+  m_AnchoredPosition: {x: 146.743, y: 242}
   m_SizeDelta: {x: 393.487, y: 418.469}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1903347848
@@ -1903,7 +1886,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 358951805
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: -5
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
