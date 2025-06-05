@@ -441,6 +441,8 @@ public class inkStory : MonoBehaviour
             case "deskrevolver": spriteHolder.sprite = spritelist[24]; break;
             case "ventremoved": spriteHolder.sprite = spritelist[25]; break;
              case "radiorepairs" :spriteHolder.sprite = spritelist[26]; break;
+             case "alice1" :spriteHolder.sprite = spritelist[27]; break;
+             case "alice2" :spriteHolder.sprite = spritelist[28]; break;
 
             
         }
