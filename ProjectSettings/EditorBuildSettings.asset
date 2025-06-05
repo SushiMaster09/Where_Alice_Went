@@ -10,6 +10,7 @@ EditorBuildSettings:
     guid: d2466a877440c96479addd99e7365131
   - enabled: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     path: Assets/Scripts/Settings/Scenes/Levels/Forest/ForestStart.unity
     guid: bab4922698552ac498921efed2fae0a3
   - enabled: 1
@@ -34,6 +35,8 @@ EditorBuildSettings:
     path: Assets/Scripts/Settings/Scenes/Levels/Forest/ForestBrambles1.unity
     guid: dcac5dac54fa860479d367b2b744a54d
 =======
+=======
+>>>>>>> Stashed changes
     path: Assets/STORY/Scenes/maingame.unity
     guid: 20c3da6bd3ee0844b837ed0ec9aec6f2
 >>>>>>> Stashed changes
