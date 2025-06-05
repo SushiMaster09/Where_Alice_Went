@@ -17,11 +17,11 @@ public class PatrollingEnemy : MonoBehaviour
     {
         if (IsFacingRight())
         {
-            rb.velocity = new Vector2(moveSpeed, 0f);
+            rb.linearVelocity = new Vector2(moveSpeed, 0f);
         }
         else
         {
-            rb.velocity = new Vector2(-moveSpeed, 0f);
+            rb.linearVelocity = new Vector2(-moveSpeed, 0f);
         }
     }
 
@@ -32,6 +32,6 @@ public class PatrollingEnemy : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        transform.localScale = new Vector2(-Mathf.Sign(rb.velocity.x), transform.localScale.y);
+        transform.localScale = new Vector2(-Mathf.Sign(rb.linearVelocity.x), transform.localScale.y);
     }
 }

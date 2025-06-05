@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
         if (!canMove)
         {
             animator.SetFloat("Speed", 0f);
-            rb.velocity = new Vector2(0f, 0f);
+            rb.linearVelocity = new Vector2(0f, 0f);
             return;
         }
 
@@ -89,15 +89,15 @@ public class PlayerMovement : MonoBehaviour
                 audioManager.PlaySFX(audioManager.jump);
                 coyoteCounter = 0;
                 isJumping = true;
-                rb.velocity = new Vector2(rb.velocity.x, doubleJump ? doubleJumpingPower : jumpingPower);
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, doubleJump ? doubleJumpingPower : jumpingPower);
 
                 doubleJump = !doubleJump;
             }
         }
 
-        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+        if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0f)
         {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
         }
 
         Flip();
@@ -119,7 +119,7 @@ public class PlayerMovement : MonoBehaviour
             footSteps.enabled = false;
         }
 
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
     }
 
     private bool IsGrounded()
