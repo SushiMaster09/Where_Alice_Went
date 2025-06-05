@@ -62,8 +62,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 553409836274370818}
   SFXSource: {fileID: 4739680044873694325}
-  background: {fileID: 8300000, guid: 4111b72ba979d774494cc3a088faeafd, type: 3}
-  jump: {fileID: 8300000, guid: de812b515a5c45d4fa030cf39e846e84, type: 3}
+  background: {fileID: 0}
+  jump: {fileID: 8300000, guid: 8fc252ff972370241b2451ee8684b871, type: 3}
   slash: {fileID: 8300000, guid: 80502e18f68bb734b9dded7bb8d2e750, type: 3}
 --- !u!1 &8272716441798891791
 GameObject:
@@ -108,6 +108,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
@@ -236,6 +237,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4111b72ba979d774494cc3a088faeafd, type: 3}
+  m_Resource: {fileID: 8300000, guid: 4111b72ba979d774494cc3a088faeafd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
