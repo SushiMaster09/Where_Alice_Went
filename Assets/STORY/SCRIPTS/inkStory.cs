@@ -225,7 +225,7 @@ public class inkStory : MonoBehaviour
             endtag = tagValue.ToLower();
             if (endtag == "true")
             {
-            SceneManager.LoadScene("GAME/Scenes/Levels/Chapter1");
+            SceneManager.LoadScene("GAME/Scripts/Settings/Scenes/Levels/Forest/ForestStart");
             }
             break;
             default:
