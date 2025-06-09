@@ -8,28 +8,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GAME/Scenes/Menus/MainMenu.unity
     guid: d2466a877440c96479addd99e7365131
-  - enabled: 1
+  - enabled: 0
     path: Assets/GAME/Scripts/Settings/Scenes/Levels/Forest/ForestStart.unity
     guid: bab4922698552ac498921efed2fae0a3
-  - enabled: 1
+  - enabled: 0
     path: Assets/GAME/Scripts/Settings/Scenes/Levels/Forest/ForestHatter.unity
     guid: f5371bb0c59e3974b869bc5e44c741f2
-  - enabled: 1
+  - enabled: 0
     path: Assets/GAME/Scripts/Settings/Scenes/Levels/Forest/ForestWell.unity
     guid: cd64a559a75d6e149859beda423f0b9d
-  - enabled: 1
+  - enabled: 0
     path: Assets/GAME/Scripts/Settings/Scenes/Levels/Forest/Beneath The Forest/BeneathForest.unity
     guid: d683a41debe799046acb54e6433a4b81
-  - enabled: 1
+  - enabled: 0
     path: Assets/GAME/Scripts/Settings/Scenes/Levels/Forest/Beneath The Forest/BeneathForest2.unity
     guid: 9d6d836c7b28b5b4884b1d038f1d46ed
-  - enabled: 1
+  - enabled: 0
     path: Assets/GAME/Scripts/Settings/Scenes/Levels/Forest/Beneath The Forest/BeneathForest3.unity
     guid: 5f4bd3b88d9962242aee8020932dd890
-  - enabled: 1
+  - enabled: 0
     path: Assets/GAME/Scripts/Settings/Scenes/Levels/Forest/ForestBrambles2.unity
     guid: 20fb4a4a1dc6c1744ada747957955076
-  - enabled: 1
+  - enabled: 0
     path: Assets/GAME/Scripts/Settings/Scenes/Levels/Forest/ForestBrambles1.unity
     guid: dcac5dac54fa860479d367b2b744a54d
   - enabled: 1
@@ -47,5 +47,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/STORY/Scenes/help.unity
     guid: db0c8074cc636ea4b93e0c053c5a5a89
+  - enabled: 1
+    path: Assets/GAME/Scenes/Levels/Chapter1.unity
+    guid: 3a4b9265902746f4aa24902d579cf836
+  - enabled: 1
+    path: Assets/GAME/Scenes/Levels/Chapter1 P2.unity
+    guid: ed7c0d5b24aa94b929f0f390657e895e
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
