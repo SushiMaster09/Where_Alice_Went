@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace TC{
+namespace TC {
     public class PieceBase : UnderlyingPiece {
 
         void Start() {
@@ -12,17 +12,18 @@ namespace TC{
 
         void FacePlayer() {
             Quaternion a = new();
-            a.SetLookRotation(transform.position - Player.player.transform.position + new Vector3(0, -1, 0));
-            a = new Quaternion(0, a.y, 0, a.w);
+            a.SetLookRotation(transform.position - Player.player.transform.position/* + new Vector3(0, -1, 0)*/);
+            a = new Quaternion(0, -a.y, 0, 0);
             transform.rotation = a;
         }
 
         void AssignMaterialAndMesh() {
-            gameObject.GetComponent<MeshFilter>().mesh = thisPiece.thisPiece;
             if (playersTeam) {
+                gameObject.GetComponent<MeshFilter>().mesh = thisPiece.playersTeamModel;
                 gameObject.GetComponent<MeshRenderer>().materials = thisPiece.playerTeamMaterial;
             }
             else {
+                gameObject.GetComponent<MeshFilter>().mesh = thisPiece.AITeamMesh;
                 gameObject.GetComponent<MeshRenderer>().materials = thisPiece.enemyTeamMaterial;
             }
         }
@@ -51,7 +52,7 @@ namespace TC{
                     whileLoopVariable = true;
                 }
             }
-            base.previousPosition = new Vector3(newX, 2, newZ);
+            base.previousPosition = new Vector3(newX, 2 + thisPiece.verticalOffset, newZ);
         }
 
         void LateUpdate() {

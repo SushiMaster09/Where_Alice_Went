@@ -38,8 +38,7 @@ namespace TC{
             }
             int randomNumber = Random.Range(1, OverarchingPieceMovement.Instance.allPieceMovement.Count);
             thisPiece = new PieceMovement(randomNumber, playersTeam, this);
-
-
+            GetComponent<CapsuleCollider>().center = new Vector3(0, -thisPiece.verticalOffset, 0);
         }
 
         internal void IfNotLevellingReturn() {
@@ -96,27 +95,31 @@ namespace TC{
             if (mode == Mode.gaming) {
                 transform.position = previousPosition;
                 thisPiece.AIAccessiblePosition = new Vector2Int((int)transform.position.x, (int)transform.position.z);
+                if (transform.position.y != 2 + thisPiece.verticalOffset) {
+                    transform.position = new Vector3(transform.position.x, 2 + thisPiece.verticalOffset, transform.position.z);
+                    previousPosition = transform.position;
+                }
             }
             else {
                 if (name != "Player") {
-                    transform.position = new Vector3(500, 2f, 500);
+                    transform.position = new Vector3(500, 2f - thisPiece.verticalOffset, 500);
                 }
                 else {
-                    transform.position = new Vector3(500, 1f, 500);
+                    transform.position = new Vector3(500, 1f - thisPiece.verticalOffset, 500);
                 }
             }
         }
 
         public void EnsureCorrectPositions(string hi) {
             if (mode == Mode.gaming) {
-                if (previousPosition.y != 1) {
-                    previousPosition = new Vector3(previousPosition.x, 1, previousPosition.z);
+                if (previousPosition.y != 1 + thisPiece.verticalOffset) {
+                    previousPosition = new Vector3(previousPosition.x, 1 + thisPiece.verticalOffset, previousPosition.z);
                 }
                 transform.position = previousPosition;
                 thisPiece.AIAccessiblePosition = new Vector2Int((int)transform.position.x, (int)transform.position.z);
             }
             else {
-                transform.position = new Vector3(500, 1f, 500);
+                transform.position = new Vector3(500, 1f + thisPiece.verticalOffset, 500);
             }
         }
 

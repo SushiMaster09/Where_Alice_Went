@@ -6,7 +6,11 @@ namespace TC{
     //[CreateAssetMenu(fileName = "Piece", menuName = "Scriptable Objects/Piece")]
     public class PieceMovement {
         [SerializeField]
-        public Mesh thisPiece;
+        public float verticalOffset;
+        [SerializeField]
+        public Mesh playersTeamModel;
+        [SerializeField]
+        public Mesh AITeamMesh;
         [SerializeField]
         public Material[] playerTeamMaterial;
         [SerializeField]
@@ -30,6 +34,7 @@ namespace TC{
         public PieceMovement(PieceMovement thing) {
             inheritingPiece = thing;
             #region Assign all variables
+            verticalOffset = inheritingPiece.verticalOffset;
             thisObject = thing.thisObject;
             AIAccessiblePosition = inheritingPiece.AIAccessiblePosition;
             playersTeam = inheritingPiece.playersTeam;
@@ -49,8 +54,9 @@ namespace TC{
             this.thisObject = thisObject;
 
             inheritingPiece = OverarchingPieceMovement.Instance.allPieceMovement[position];
+            verticalOffset = inheritingPiece.verticalOffset;
             #region Assign all variables other than the 2D array
-            thisPiece = inheritingPiece.thisPiece;
+            playersTeamModel = inheritingPiece.playersTeamModel;
             playerTeamMaterial = inheritingPiece.playerTeamMaterial;
             enemyTeamMaterial = inheritingPiece.enemyTeamMaterial;
             name = inheritingPiece.name/* + ", " + UnityEngine.Random.Range(0, 1000)*/;
