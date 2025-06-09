@@ -70,7 +70,7 @@ public class inkStory : MonoBehaviour
     private const string LAYOUT_TAG = "layout";
     private const string IMAGE_TAG = "image";
     private const string AUDIO_TAG = "audio";
-    private const string END_TAG = "end";
+    private const string NEXT_SCENE_TAG = "nextScene";
  
 
     //speaker holder
@@ -221,11 +221,11 @@ public class inkStory : MonoBehaviour
             audioMONEY = tagValue.ToLower();
             PlayAudioByTag(audioMONEY);
             break;
-            case END_TAG:
+            case NEXT_SCENE_TAG:
             endtag = tagValue.ToLower();
             if (endtag == "true")
             {
-            SceneManager.LoadScene("end");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
             break;
             default:
@@ -441,6 +441,7 @@ public class inkStory : MonoBehaviour
             case "deskrevolver": spriteHolder.sprite = spritelist[24]; break;
             case "ventremoved": spriteHolder.sprite = spritelist[25]; break;
              case "radiorepairs" :spriteHolder.sprite = spritelist[26]; break;
+             case "alicehouse" :spriteHolder.sprite = spritelist[27]; break;
 
             
         }

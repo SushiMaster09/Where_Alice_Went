@@ -39,7 +39,7 @@ VAR duvet = false
 
 One thing was certain, that the white kitten had had nothing to do with it:- it was the black kitten’s fault entirely.
 
-#image: alice1 
+#image: alicehouse 
 
 For the white kitten had been having its face washed by the old cat for the last quarter of an hour;
 
@@ -101,5 +101,5 @@ Here Alice wound two or three turns of the worsted round the kitten’s neck, ju
 
 This led to a scramble, in which the ball rolled down upon the floor, and yards and yards of it got unwound again.
 
-#end : true
+#nextScene : true
 ->END
