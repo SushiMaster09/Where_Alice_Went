@@ -19,7 +19,7 @@ public class LevelChanger : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        var player = collision.collider.GetComponent<Player>();
+        var player = collision.collider.GetComponent<PlayerMovement>();
 
         if (player != null)
         {
