@@ -20,6 +20,7 @@ public class PieceMovementAttributes : PropertyDrawer {
             height += FOLDOUT_HEIGHT;
             height += FOLDOUT_HEIGHT;
             height += FOLDOUT_HEIGHT;
+            height += FOLDOUT_HEIGHT;
             //Allied Material
             height += FOLDOUT_HEIGHT;
             if (property.FindPropertyRelative("playerTeamMaterial").isExpanded) {
@@ -58,7 +59,7 @@ public class PieceMovementAttributes : PropertyDrawer {
             position.y += FOLDOUT_HEIGHT;
             EditorGUI.PropertyField(position, property.FindPropertyRelative("name"));
             position.y += FOLDOUT_HEIGHT;
-            EditorGUI.PropertyField(position, property.FindPropertyRelative("verticalOffset"));
+            EditorGUI.PropertyField(position, property.FindPropertyRelative("playersTeamVerticalOffset"));
             position.y += FOLDOUT_HEIGHT;
             EditorGUI.PropertyField(position, property.FindPropertyRelative("playersTeamModel"));
             position.y += FOLDOUT_HEIGHT;
@@ -70,6 +71,8 @@ public class PieceMovementAttributes : PropertyDrawer {
                     position.y += 20;
                 }
             }
+            EditorGUI.PropertyField(position, property.FindPropertyRelative("AITeamVerticalOffset"));
+            position.y += FOLDOUT_HEIGHT;
             EditorGUI.PropertyField(position, property.FindPropertyRelative("AITeamMesh"));
             position.y += FOLDOUT_HEIGHT;
             EditorGUI.PropertyField(position, property.FindPropertyRelative("enemyTeamMaterial"));

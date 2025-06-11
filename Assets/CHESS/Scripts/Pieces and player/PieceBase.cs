@@ -52,7 +52,12 @@ namespace TC {
                     whileLoopVariable = true;
                 }
             }
-            base.previousPosition = new Vector3(newX, 2 + thisPiece.verticalOffset, newZ);
+            if (playersTeam) {
+                base.previousPosition = new Vector3(newX, 2 + thisPiece.playersTeamVerticalOffset, newZ);
+            }
+            else {
+                base.previousPosition = new Vector3(newX, 2 + thisPiece.AITeamVerticalOffset, newZ);
+            }
         }
 
         void LateUpdate() {

@@ -10,7 +10,12 @@ namespace TC {
                 if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit Info)) {
                     if (Info.collider.gameObject == gameObject) {
                         CheckIfTaking();
-                        OriginalObject.GetComponent<UnderlyingPiece>().previousPosition = new Vector3(transform.position.x, transform.position.y + 0.9f + OriginalObject.GetComponent<UnderlyingPiece>().thisPiece.verticalOffset, transform.position.z);
+                        if (OriginalObject.GetComponent<UnderlyingPiece>().playersTeam) {
+                            OriginalObject.GetComponent<UnderlyingPiece>().previousPosition = new Vector3(transform.position.x, transform.position.y + 0.9f + OriginalObject.GetComponent<UnderlyingPiece>().thisPiece.playersTeamVerticalOffset, transform.position.z);
+                        }
+                        else {
+                            OriginalObject.GetComponent<UnderlyingPiece>().previousPosition = new Vector3(transform.position.x, transform.position.y + 0.9f + OriginalObject.GetComponent<UnderlyingPiece>().thisPiece.AITeamVerticalOffset, transform.position.z);
+                        }
                         OriginalObject.GetComponent<UnderlyingPiece>().selected = false;
                         OriginalObject.GetComponent<UnderlyingPiece>().hasMoved = true;
                         OriginalObject.GetComponent<UnderlyingPiece>().DeactivateVisibility();

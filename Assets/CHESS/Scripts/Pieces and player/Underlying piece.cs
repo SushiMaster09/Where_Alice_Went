@@ -38,7 +38,12 @@ namespace TC{
             }
             int randomNumber = Random.Range(1, OverarchingPieceMovement.Instance.allPieceMovement.Count);
             thisPiece = new PieceMovement(randomNumber, playersTeam, this);
-            GetComponent<CapsuleCollider>().center = new Vector3(0, -thisPiece.verticalOffset, 0);
+            if (playersTeam) {
+                GetComponent<CapsuleCollider>().center = new Vector3(0, -thisPiece.playersTeamVerticalOffset, 0);
+            }
+            else {
+                GetComponent<CapsuleCollider>().center = new Vector3(0, -thisPiece.AITeamVerticalOffset, 0);
+            }
         }
 
         internal void IfNotLevellingReturn() {
@@ -95,31 +100,56 @@ namespace TC{
             if (mode == Mode.gaming) {
                 transform.position = previousPosition;
                 thisPiece.AIAccessiblePosition = new Vector2Int((int)transform.position.x, (int)transform.position.z);
-                if (transform.position.y != 2 + thisPiece.verticalOffset) {
-                    transform.position = new Vector3(transform.position.x, 2 + thisPiece.verticalOffset, transform.position.z);
-                    previousPosition = transform.position;
+                if (playersTeam) {
+                    if (transform.position.y != 2 + thisPiece.playersTeamVerticalOffset) {
+                        transform.position = new Vector3(transform.position.x, 2 + thisPiece.playersTeamVerticalOffset, transform.position.z);
+                        previousPosition = transform.position;
+                    }
+                }
+                else {
+                    if (transform.position.y != 2 + thisPiece.AITeamVerticalOffset) {
+                        transform.position = new Vector3(transform.position.x, 2 + thisPiece.AITeamVerticalOffset, transform.position.z);
+                        previousPosition = transform.position;
+                    }
                 }
             }
             else {
-                if (name != "Player") {
-                    transform.position = new Vector3(500, 2f - thisPiece.verticalOffset, 500);
+                if (playersTeam) {
+                    if (name != "Player") {
+                        transform.position = new Vector3(500, 2f - thisPiece.playersTeamVerticalOffset, 500);
+                    }
+                    else {
+                        transform.position = new Vector3(500, 1f - thisPiece.playersTeamVerticalOffset, 500);
+                    }
                 }
                 else {
-                    transform.position = new Vector3(500, 1f - thisPiece.verticalOffset, 500);
+                    transform.position = new Vector3(500, 1f - thisPiece.AITeamVerticalOffset, 500);
                 }
             }
         }
 
         public void EnsureCorrectPositions(string hi) {
             if (mode == Mode.gaming) {
-                if (previousPosition.y != 1 + thisPiece.verticalOffset) {
-                    previousPosition = new Vector3(previousPosition.x, 1 + thisPiece.verticalOffset, previousPosition.z);
+                if (playersTeam) {
+                    if (previousPosition.y != 1 + thisPiece.playersTeamVerticalOffset) {
+                        previousPosition = new Vector3(previousPosition.x, 1 + thisPiece.playersTeamVerticalOffset, previousPosition.z);
+                    }
                 }
-                transform.position = previousPosition;
+                else {
+                    if (previousPosition.y != 1 + thisPiece.AITeamVerticalOffset) {
+                        previousPosition = new Vector3(previousPosition.x, 1 + thisPiece.AITeamVerticalOffset, previousPosition.z);
+                    }
+                }
+                    transform.position = previousPosition;
                 thisPiece.AIAccessiblePosition = new Vector2Int((int)transform.position.x, (int)transform.position.z);
             }
             else {
-                transform.position = new Vector3(500, 1f + thisPiece.verticalOffset, 500);
+                if (playersTeam) {
+                    transform.position = new Vector3(500, 1f + thisPiece.playersTeamVerticalOffset, 500);
+                }
+                else {
+                    transform.position = new Vector3(500, 1f + thisPiece.AITeamVerticalOffset, 500);
+                }
             }
         }
 

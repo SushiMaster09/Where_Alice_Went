@@ -6,7 +6,9 @@ namespace TC{
     //[CreateAssetMenu(fileName = "Piece", menuName = "Scriptable Objects/Piece")]
     public class PieceMovement {
         [SerializeField]
-        public float verticalOffset;
+        public float playersTeamVerticalOffset;
+        [SerializeField]
+        public float AITeamVerticalOffset;
         [SerializeField]
         public Mesh playersTeamModel;
         [SerializeField]
@@ -34,7 +36,7 @@ namespace TC{
         public PieceMovement(PieceMovement thing) {
             inheritingPiece = thing;
             #region Assign all variables
-            verticalOffset = inheritingPiece.verticalOffset;
+            playersTeamVerticalOffset = inheritingPiece.playersTeamVerticalOffset;
             thisObject = thing.thisObject;
             AIAccessiblePosition = inheritingPiece.AIAccessiblePosition;
             playersTeam = inheritingPiece.playersTeam;
@@ -54,7 +56,8 @@ namespace TC{
             this.thisObject = thisObject;
 
             inheritingPiece = OverarchingPieceMovement.Instance.allPieceMovement[position];
-            verticalOffset = inheritingPiece.verticalOffset;
+            playersTeamVerticalOffset = inheritingPiece.playersTeamVerticalOffset;
+            AITeamVerticalOffset = inheritingPiece.AITeamVerticalOffset;
             #region Assign all variables other than the 2D array
             playersTeamModel = inheritingPiece.playersTeamModel;
             playerTeamMaterial = inheritingPiece.playerTeamMaterial;
