@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 0787994fdca36c646b3b6ce3fde5f63b
+guid: 0fe4206cfba311c4b9549e231daf5c14
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6840857970483876212
-    second: shop_0
+      213: 7392081655081507713
+    second: Cat with Separet mouth and nose_0
+  - first:
+      213: 8360947487951443025
+    second: Cat with Separet mouth and nose_1
+  - first:
+      213: -4141980914918262719
+    second: Cat with Separet mouth and nose_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -139,32 +145,72 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shop_0
+      name: Leg 2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1919
-        height: 981
+        x: 241
+        y: 2
+        width: 163
+        height: 162
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4715799641c9fee50800000000000000
-      internalID: 6840857970483876212
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+      spriteID: 41c529f57c234a7418596b32f54c3293
+      internalID: -1436895503
+      vertices:
+      - {x: 0, y: 0}
+      - {x: 163, y: 0}
+      - {x: 0, y: 162}
+      - {x: 163, y: 162}
+      indices: 000000000200000001000000010000000200000003000000
+      edges:
+      - {x: 0, y: 1}
+      - {x: 0, y: 2}
+      - {x: 1, y: 3}
+      - {x: 2, y: 3}
+      weights:
+      - 'weight[0]': 0
+        'weight[1]': 0
+        'weight[2]': 0
+        'weight[3]': 0
+        'boneIndex[0]': 0
+        'boneIndex[1]': 0
+        'boneIndex[2]': 0
+        'boneIndex[3]': 0
+      - 'weight[0]': 0
+        'weight[1]': 0
+        'weight[2]': 0
+        'weight[3]': 0
+        'boneIndex[0]': 0
+        'boneIndex[1]': 0
+        'boneIndex[2]': 0
+        'boneIndex[3]': 0
+      - 'weight[0]': 0
+        'weight[1]': 0
+        'weight[2]': 0
+        'weight[3]': 0
+        'boneIndex[0]': 0
+        'boneIndex[1]': 0
+        'boneIndex[2]': 0
+        'boneIndex[3]': 0
+      - 'weight[0]': 0
+        'weight[1]': 0
+        'weight[2]': 0
+        'weight[3]': 0
+        'boneIndex[0]': 0
+        'boneIndex[1]': 0
+        'boneIndex[2]': 0
+        'boneIndex[3]': 0
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: afbb1678351d60548962b405836db5a3
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +220,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      shop_0: 6840857970483876212
+      Cat (Full leg)_0: 1693512642
+      Cat Head and Upper Body: -209898157
+      Cat Mouth: -4141980914918262719
+      Cat Nose: 8360947487951443025
+      FullOpenMouth: -210949989
+      Leg 2: -1436895503
+      Open Eye2: -794791047
+      PartOpenMouth: 1594491715
+      Partily close eye: -1056776716
+      Slit eye: 1700471945
+      Tail: 7392081655081507713
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
