@@ -6,6 +6,7 @@ using System.Data;
 using System.Threading.Tasks;
 using UnityEngine.SceneManagement;
 using System.Threading;
+using Unity.VisualScripting;
 
 namespace TC {
     public class AI : MonoBehaviour {
@@ -59,10 +60,9 @@ namespace TC {
             bool AITurn = (startingDepth - depth) % 2 == 0;
             int bestEvaluation = AITurn ? int.MinValue : int.MaxValue;
             UnderlyingPiece bestPiece = null;
-            if (numOfTimesValidMoveCacheRefreshed != (int)(startingDepth - depth) / 6) {
+            if (numOfTimesValidMoveCacheRefreshed <= (int)(startingDepth - depth) / 2) {
                 numOfTimesValidMoveCacheRefreshed++;
                 foreach (PieceMovement pieceMovement in AITeam) {
-            Debug.Log(depth + ", " +  startingDepth);
                     validMoveCache[pieceMovement.name] = ValidMoves(pieceMovement);
                 }
                 foreach (PieceMovement pieceMovement in PlayersTeam) {
@@ -72,7 +72,6 @@ namespace TC {
             int count = 0;
             IEnumerable<PieceMovement> usedMovement = AITurn ? gamestate.AITeam.Where(piece => piece.hasMoved == false) : gamestate.playersTeam;
             if (depth - startingDepth == 0) {
-                Debug.Log(Evaluation(gamestate));
                 //one of the three AI turn moves
                 Parallel.ForEach(usedMovement, (movement, parallelLoopsState) => {
                     Gamestate usedGamestate = new(gamestate);
@@ -298,13 +297,13 @@ namespace TC {
             if (capturingPiece != null) {
                 if (AITurn) {
                     gamestate.playersTeam.Add(capturingPiece);
-                    if (numOfPlayers != PlayersTeam.Count) {
+                    if (numOfPlayers < PlayersTeam.Count) {
                         throw new Exception(capturingPiece.name + " Added over and above the rest");
                     }
                 }
                 else {
                     gamestate.AITeam.Add(capturingPiece);
-                    if (numOfAI != AITeam.Count) {
+                    if (numOfAI < AITeam.Count) {
                         throw new Exception(capturingPiece.name + " Added over and above the rest");
                     }
                 }
@@ -392,13 +391,12 @@ namespace TC {
             int numberOfMoves = 1;
             //for (int i = numberOfMoves; i >= 1; i--) {
             var evaluatedPieceAndMovement = Search(searchDepth + numberOfMoves, Mathf.NegativeInfinity, Mathf.Infinity, searchDepth + numberOfMoves - 1, new Gamestate(gamestate));
-            Debug.Log(evaluatedPieceAndMovement.Item1);
             ExecuteMove(evaluatedPieceAndMovement.Item3, evaluatedPieceAndMovement.Item2);
 
             foreach (PieceMovement piece in PlayersTeam.Where(piece => piece.thisObject.hasMoved)) {
                 piece.thisObject.hasMoved = false;
             }
-            Player.player.GetComponent<Player>().numberOfMoves = 3;
+            Player.player.GetComponent<Player>().numberOfMoves = 1;
         }
     }
 }
