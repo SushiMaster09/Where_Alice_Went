@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ball of wool_0: -7737986924688647156
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
