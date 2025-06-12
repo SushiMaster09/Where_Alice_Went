@@ -169,7 +169,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -312,7 +313,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -455,7 +457,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -598,7 +601,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -741,7 +745,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -884,7 +889,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -1072,7 +1078,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -1270,6 +1277,150 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 249762eb96bd1644c9726dd2ba6b74f9, type: 3}
+--- !u!1 &1323189834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1323189835}
+  - component: {fileID: 1323189839}
+  - component: {fileID: 1323189838}
+  - component: {fileID: 1323189837}
+  - component: {fileID: 1323189836}
+  m_Layer: 0
+  m_Name: Capsule (31)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1323189835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323189834}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 101, y: 2, z: 101}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7979386536253492039}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1323189836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323189834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb1d4365cf41fa498eb9f8ee8bc85dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selected: 0
+  firstFrameSelected: 0
+  thisPiece:
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
+    playersTeamModel: {fileID: 0}
+    AITeamMesh: {fileID: 0}
+    playerTeamMaterial: []
+    enemyTeamMaterial: []
+    name: 
+    AIAccessiblePosition: {x: 0, y: 0}
+    hasMoved: 0
+    thisObject: {fileID: 0}
+    movableTiles1DArray: 000000000000000000
+    potentialRange: 0
+    infinitelyScalingRange: 0
+    currentRange: 8
+  capturedPieces: 0
+  level: 1
+  previousPosition: {x: 0, y: 0, z: 0}
+  hasMoved: 0
+--- !u!136 &1323189837
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323189834}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1323189838
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323189834}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1323189839
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323189834}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1326879459
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,7 +1471,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -1463,7 +1615,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -1606,7 +1759,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -1728,7 +1882,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4640824391833927938}
   - component: {fileID: 5296208156123883665}
-  - component: {fileID: 3879843651801408344}
   - component: {fileID: 3170946510147085298}
   - component: {fileID: 6534509096633654727}
   m_Layer: 0
@@ -1956,7 +2109,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -2045,7 +2199,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -2339,7 +2494,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -2523,7 +2679,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -2667,7 +2824,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -2697,25 +2855,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allPieceMovement:
-  - verticalOffset: 0
-    playersTeamModel: {fileID: 0}
-    AITeamMesh: {fileID: 0}
+  - playersTeamVerticalOffset: -0.92
+    AITeamVerticalOffset: -0.92
+    playersTeamModel: {fileID: -2426115214132556989, guid: baf4cf08d0d338b43b379331a4dca404, type: 3}
+    AITeamMesh: {fileID: -2426115214132556989, guid: f370459920dfd884581b31149c535caa, type: 3}
     playerTeamMaterial:
-    - {fileID: 2100000, guid: 00b4427a675a1c74781e4f33d89a21cf, type: 2}
-    - {fileID: 2100000, guid: cde850dccefb4e54db34ce2e5a7a15d6, type: 2}
-    - {fileID: 2100000, guid: c1008887f8ff5d4478b4b3c39d623e2e, type: 2}
-    - {fileID: 2100000, guid: b44cbbe9c18ec1f42b8636e5e705743c, type: 2}
-    - {fileID: 2100000, guid: ae215eca1f76dae47af6b592f386aca0, type: 2}
-    - {fileID: 2100000, guid: 95a04476b8b5c8f41beb8afcacef10f8, type: 2}
-    - {fileID: 2100000, guid: 4145d6f7c1cc24840b63590fb5ec5cbd, type: 2}
-    - {fileID: 2100000, guid: f945b6748cea8014c93ef6d9315f069c, type: 2}
-    - {fileID: 2100000, guid: a65049abe4efd8c4088c8f74fcd8e590, type: 2}
-    - {fileID: 2100000, guid: 8f6b8e78ad397854a9894d4c5afc3e83, type: 2}
-    - {fileID: 2100000, guid: bfe0983283383074e896691d57c36d08, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     enemyTeamMaterial:
-    - {fileID: 2100000, guid: ea9157c8db6921644be07793bd146448, type: 2}
-    - {fileID: 2100000, guid: 584abacfa4e32e24799fe949097a68e4, type: 2}
-    - {fileID: 2100000, guid: 4a81f39c3209538458870f38a664b622, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
     name: King
     AIAccessiblePosition: {x: 0, y: 0}
     hasMoved: 0
@@ -2724,16 +2883,17 @@ MonoBehaviour:
     potentialRange: 1
     infinitelyScalingRange: 0
     currentRange: 8
-  - verticalOffset: -0.93
+  - playersTeamVerticalOffset: -0.93
+    AITeamVerticalOffset: -0.93
     playersTeamModel: {fileID: 2534964839176971238, guid: 8e670ce7d732a4641b27a366ca917478, type: 3}
-    AITeamMesh: {fileID: 0}
+    AITeamMesh: {fileID: -3883359674837331799, guid: 27453c2e51e5a2447b0cddddd7dd32bd, type: 3}
     playerTeamMaterial:
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     enemyTeamMaterial:
-    - {fileID: 2100000, guid: ea9157c8db6921644be07793bd146448, type: 2}
-    - {fileID: 2100000, guid: 584abacfa4e32e24799fe949097a68e4, type: 2}
-    - {fileID: 2100000, guid: 4a81f39c3209538458870f38a664b622, type: 2}
-    name: 'Rook - Tweedledumb - '
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    name: Rook - Tweedledumb - Humpty dumpty
     AIAccessiblePosition: {x: 0, y: 0}
     hasMoved: 0
     thisObject: {fileID: 0}
@@ -2741,16 +2901,15 @@ MonoBehaviour:
     potentialRange: 1
     infinitelyScalingRange: 1
     currentRange: 8
-  - verticalOffset: -0.93
+  - playersTeamVerticalOffset: -0.93
+    AITeamVerticalOffset: -0.93
     playersTeamModel: {fileID: 2534964839176971238, guid: 8e670ce7d732a4641b27a366ca917478, type: 3}
-    AITeamMesh: {fileID: 0}
+    AITeamMesh: {fileID: -8865685367846995857, guid: a430746502b93614eb243f3c415fa210, type: 3}
     playerTeamMaterial:
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     enemyTeamMaterial:
-    - {fileID: 2100000, guid: ea9157c8db6921644be07793bd146448, type: 2}
-    - {fileID: 2100000, guid: 584abacfa4e32e24799fe949097a68e4, type: 2}
-    - {fileID: 2100000, guid: 4a81f39c3209538458870f38a664b622, type: 2}
-    name: 'Rook - Tweedledumber - '
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    name: Rook - Tweedledumber - Lion
     AIAccessiblePosition: {x: 0, y: 0}
     hasMoved: 0
     thisObject: {fileID: 0}
@@ -2758,14 +2917,16 @@ MonoBehaviour:
     potentialRange: 1
     infinitelyScalingRange: 1
     currentRange: 8
-  - verticalOffset: 0
+  - playersTeamVerticalOffset: -0.93
+    AITeamVerticalOffset: -0.93
     playersTeamModel: {fileID: 2534964839176971238, guid: db086ae6005b8904bbd228dac654ab47, type: 3}
     AITeamMesh: {fileID: 2534964839176971238, guid: 641616041a229be4e89b0e672c347501, type: 3}
     playerTeamMaterial:
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     enemyTeamMaterial:
-    - {fileID: 2100000, guid: ea9157c8db6921644be07793bd146448, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
     name: Queen - Queen - Queen
     AIAccessiblePosition: {x: 0, y: 0}
     hasMoved: 0
@@ -2774,18 +2935,18 @@ MonoBehaviour:
     potentialRange: 1
     infinitelyScalingRange: 1
     currentRange: 8
-  - verticalOffset: -0.93
+  - playersTeamVerticalOffset: -0.93
+    AITeamVerticalOffset: -0.93
     playersTeamModel: {fileID: -864259460963330315, guid: 8e9a58237ed410e4c8c1dde28ca79fc4, type: 3}
-    AITeamMesh: {fileID: 0}
+    AITeamMesh: {fileID: -5058338291701013446, guid: d54fed77a6481b24b9c303044890551d, type: 3}
     playerTeamMaterial:
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     enemyTeamMaterial:
-    - {fileID: 2100000, guid: ea9157c8db6921644be07793bd146448, type: 2}
-    - {fileID: 2100000, guid: 584abacfa4e32e24799fe949097a68e4, type: 2}
-    - {fileID: 2100000, guid: 4a81f39c3209538458870f38a664b622, type: 2}
-    name: 'Bishop - sheep - '
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    name: Bishop - sheep - Crow
     AIAccessiblePosition: {x: 0, y: 0}
     hasMoved: 0
     thisObject: {fileID: 0}
@@ -2793,16 +2954,17 @@ MonoBehaviour:
     potentialRange: 1
     infinitelyScalingRange: 1
     currentRange: 8
-  - verticalOffset: 15.076
-    playersTeamModel: {fileID: 6680149506207314837, guid: 8875b7eefff8a334dba7011601e2b6aa, type: 3}
-    AITeamMesh: {fileID: 0}
+  - playersTeamVerticalOffset: 15.08
+    AITeamVerticalOffset: -0.93
+    playersTeamModel: {fileID: 6680149506207314837, guid: 05a3b3b7085215d4a913720a9352c390, type: 3}
+    AITeamMesh: {fileID: 4787136918717088048, guid: 85a97e9519315c7448ee476453b6dc7f, type: 3}
     playerTeamMaterial:
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     enemyTeamMaterial:
-    - {fileID: 2100000, guid: ea9157c8db6921644be07793bd146448, type: 2}
-    - {fileID: 2100000, guid: 584abacfa4e32e24799fe949097a68e4, type: 2}
-    - {fileID: 2100000, guid: 4a81f39c3209538458870f38a664b622, type: 2}
-    name: Bishop - Aged man
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    name: Bishop - Aged man - Walrus
     AIAccessiblePosition: {x: 0, y: 0}
     hasMoved: 0
     thisObject: {fileID: 0}
@@ -2810,17 +2972,16 @@ MonoBehaviour:
     potentialRange: 1
     infinitelyScalingRange: 1
     currentRange: 8
-  - verticalOffset: -0.5
+  - playersTeamVerticalOffset: -0.49
+    AITeamVerticalOffset: -0.49
     playersTeamModel: {fileID: -5611087096184871397, guid: e673a37eed1132f44a5ff1a179c8750a, type: 3}
-    AITeamMesh: {fileID: -5611087096184871397, guid: e673a37eed1132f44a5ff1a179c8750a, type: 3}
+    AITeamMesh: {fileID: -5611087096184871397, guid: 47c2898cd0555ae4184b78c31bbe2285, type: 3}
     playerTeamMaterial:
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     enemyTeamMaterial:
-    - {fileID: 2100000, guid: ea9157c8db6921644be07793bd146448, type: 2}
-    - {fileID: 2100000, guid: 584abacfa4e32e24799fe949097a68e4, type: 2}
-    - {fileID: 2100000, guid: 4a81f39c3209538458870f38a664b622, type: 2}
-    - {fileID: 2100000, guid: 4a81f39c3209538458870f38a664b622, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
     name: Knight - Knight - Knight
     AIAccessiblePosition: {x: 0, y: 0}
     hasMoved: 0
@@ -2829,18 +2990,17 @@ MonoBehaviour:
     potentialRange: 2
     infinitelyScalingRange: 0
     currentRange: 8
-  - verticalOffset: 0
+  - playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: -1
     playersTeamModel: {fileID: 8157231758345479087, guid: 055de06d14f56f849bc665586509edfe, type: 3}
-    AITeamMesh: {fileID: 0}
+    AITeamMesh: {fileID: 8327444864838603468, guid: e79114437eb7c5e46bdda141a2296a3d, type: 3}
     playerTeamMaterial:
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     enemyTeamMaterial:
-    - {fileID: 2100000, guid: ea9157c8db6921644be07793bd146448, type: 2}
-    - {fileID: 2100000, guid: 584abacfa4e32e24799fe949097a68e4, type: 2}
-    - {fileID: 2100000, guid: 4a81f39c3209538458870f38a664b622, type: 2}
-    - {fileID: 2100000, guid: 4a81f39c3209538458870f38a664b622, type: 2}
-    name: 'Knight - Unicorn - '
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    name: Knight - Unicorn - Carpenter
     AIAccessiblePosition: {x: 0, y: 0}
     hasMoved: 0
     thisObject: {fileID: 0}
@@ -2848,16 +3008,36 @@ MonoBehaviour:
     potentialRange: 2
     infinitelyScalingRange: 0
     currentRange: 8
-  - verticalOffset: -0.89
+  - playersTeamVerticalOffset: -0.89
+    AITeamVerticalOffset: -0.86
     playersTeamModel: {fileID: 5388237516736692021, guid: 3c13bb0427adcde4685bd91aa7e15c3f, type: 3}
-    AITeamMesh: {fileID: 0}
+    AITeamMesh: {fileID: -5018860571569633847, guid: 8f7a282228b939041a798f3489f926bd, type: 3}
     playerTeamMaterial:
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     enemyTeamMaterial:
-    - {fileID: 2100000, guid: ea9157c8db6921644be07793bd146448, type: 2}
-    - {fileID: 2100000, guid: 584abacfa4e32e24799fe949097a68e4, type: 2}
-    - {fileID: 2100000, guid: 4a81f39c3209538458870f38a664b622, type: 2}
-    name: 'Pawn - Fawn - '
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    name: Pawn - Fawn - Frog
     AIAccessiblePosition: {x: 0, y: 0}
     hasMoved: 0
     thisObject: {fileID: 0}
@@ -2865,16 +3045,15 @@ MonoBehaviour:
     potentialRange: 1
     infinitelyScalingRange: 0
     currentRange: 8
-  - verticalOffset: 0
-    playersTeamModel: {fileID: 0}
-    AITeamMesh: {fileID: 0}
+  - playersTeamVerticalOffset: -0.93
+    AITeamVerticalOffset: -0.93
+    playersTeamModel: {fileID: 2534964839176971238, guid: 23082b2364179a94ea1133e587d092bd, type: 3}
+    AITeamMesh: {fileID: 2534964839176971238, guid: 4ae7199be76f0af48863075e44ee110f, type: 3}
     playerTeamMaterial:
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     enemyTeamMaterial:
-    - {fileID: 2100000, guid: ea9157c8db6921644be07793bd146448, type: 2}
-    - {fileID: 2100000, guid: 584abacfa4e32e24799fe949097a68e4, type: 2}
-    - {fileID: 2100000, guid: 4a81f39c3209538458870f38a664b622, type: 2}
-    name: Pawn
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    name: Pawn - Haigha - Messenger
     AIAccessiblePosition: {x: 0, y: 0}
     hasMoved: 0
     thisObject: {fileID: 0}
@@ -2882,16 +3061,21 @@ MonoBehaviour:
     potentialRange: 1
     infinitelyScalingRange: 0
     currentRange: 8
-  - verticalOffset: 0
-    playersTeamModel: {fileID: 0}
-    AITeamMesh: {fileID: 0}
+  - playersTeamVerticalOffset: -0.93
+    AITeamVerticalOffset: -0.93
+    playersTeamModel: {fileID: 2534964839176971238, guid: 95485205d22b26749b1e75c05d1058e1, type: 3}
+    AITeamMesh: {fileID: 2534964839176971238, guid: 87f435a1ded45be4db1f88b025afff65, type: 3}
     playerTeamMaterial:
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     enemyTeamMaterial:
-    - {fileID: 2100000, guid: ea9157c8db6921644be07793bd146448, type: 2}
-    - {fileID: 2100000, guid: 584abacfa4e32e24799fe949097a68e4, type: 2}
-    - {fileID: 2100000, guid: 4a81f39c3209538458870f38a664b622, type: 2}
-    name: Pawn
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    name: Pawn - Hatta - Rose
     AIAccessiblePosition: {x: 0, y: 0}
     hasMoved: 0
     thisObject: {fileID: 0}
@@ -2899,15 +3083,14 @@ MonoBehaviour:
     potentialRange: 1
     infinitelyScalingRange: 0
     currentRange: 8
-  - verticalOffset: -0.93
+  - playersTeamVerticalOffset: -0.93
+    AITeamVerticalOffset: -0.93
     playersTeamModel: {fileID: 2534964839176971238, guid: b6aa037df7c1daa438892c00fae75829, type: 3}
     AITeamMesh: {fileID: 2534964839176971238, guid: 510bdfaa8732ea341afb85d70e2829ff, type: 3}
     playerTeamMaterial:
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     enemyTeamMaterial:
-    - {fileID: 2100000, guid: ea9157c8db6921644be07793bd146448, type: 2}
-    - {fileID: 2100000, guid: 584abacfa4e32e24799fe949097a68e4, type: 2}
-    - {fileID: 2100000, guid: 4a81f39c3209538458870f38a664b622, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
     name: Pawn - Oyster - Oyster
     AIAccessiblePosition: {x: 0, y: 0}
     hasMoved: 0
@@ -2916,15 +3099,14 @@ MonoBehaviour:
     potentialRange: 1
     infinitelyScalingRange: 0
     currentRange: 8
-  - verticalOffset: -0.93
+  - playersTeamVerticalOffset: -0.93
+    AITeamVerticalOffset: -0.93
     playersTeamModel: {fileID: 2534964839176971238, guid: b6aa037df7c1daa438892c00fae75829, type: 3}
     AITeamMesh: {fileID: 2534964839176971238, guid: 510bdfaa8732ea341afb85d70e2829ff, type: 3}
     playerTeamMaterial:
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     enemyTeamMaterial:
-    - {fileID: 2100000, guid: ea9157c8db6921644be07793bd146448, type: 2}
-    - {fileID: 2100000, guid: 584abacfa4e32e24799fe949097a68e4, type: 2}
-    - {fileID: 2100000, guid: 4a81f39c3209538458870f38a664b622, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
     name: Pawn - Oyster - Oyster
     AIAccessiblePosition: {x: 0, y: 0}
     hasMoved: 0
@@ -2933,16 +3115,16 @@ MonoBehaviour:
     potentialRange: 1
     infinitelyScalingRange: 0
     currentRange: 8
-  - verticalOffset: -0.908
+  - playersTeamVerticalOffset: -0.91
+    AITeamVerticalOffset: -0.91
     playersTeamModel: {fileID: 1368239412487327046, guid: eb3fa3e8caabbbf4aac9dcdad4d4d25a, type: 3}
-    AITeamMesh: {fileID: 0}
+    AITeamMesh: {fileID: 1368239412487327046, guid: e8d2ec378fdc90041a9711f2e05db8b6, type: 3}
     playerTeamMaterial:
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     enemyTeamMaterial:
-    - {fileID: 2100000, guid: ea9157c8db6921644be07793bd146448, type: 2}
-    - {fileID: 2100000, guid: 584abacfa4e32e24799fe949097a68e4, type: 2}
-    - {fileID: 2100000, guid: 4a81f39c3209538458870f38a664b622, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
     name: Pawn - Daisy - Daisy
     AIAccessiblePosition: {x: 0, y: 0}
     hasMoved: 0
@@ -2951,16 +3133,16 @@ MonoBehaviour:
     potentialRange: 1
     infinitelyScalingRange: 0
     currentRange: 8
-  - verticalOffset: -0.908
+  - playersTeamVerticalOffset: -0.91
+    AITeamVerticalOffset: -0.91
     playersTeamModel: {fileID: 1368239412487327046, guid: eb3fa3e8caabbbf4aac9dcdad4d4d25a, type: 3}
-    AITeamMesh: {fileID: 0}
+    AITeamMesh: {fileID: 1368239412487327046, guid: e8d2ec378fdc90041a9711f2e05db8b6, type: 3}
     playerTeamMaterial:
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     enemyTeamMaterial:
-    - {fileID: 2100000, guid: ea9157c8db6921644be07793bd146448, type: 2}
-    - {fileID: 2100000, guid: 584abacfa4e32e24799fe949097a68e4, type: 2}
-    - {fileID: 2100000, guid: 4a81f39c3209538458870f38a664b622, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
     name: Pawn - Daisy - Daisy
     AIAccessiblePosition: {x: 0, y: 0}
     hasMoved: 0
@@ -2969,16 +3151,40 @@ MonoBehaviour:
     potentialRange: 1
     infinitelyScalingRange: 0
     currentRange: 8
-  - verticalOffset: 0
-    playersTeamModel: {fileID: 0}
-    AITeamMesh: {fileID: 0}
+  - playersTeamVerticalOffset: -0.93
+    AITeamVerticalOffset: -0.93
+    playersTeamModel: {fileID: 2534964839176971238, guid: 40d5c5577f5aff24c82e015d85b8695c, type: 3}
+    AITeamMesh: {fileID: 2534964839176971238, guid: 45a7f532b12b7fb4fb7d18c77ae8ba7a, type: 3}
     playerTeamMaterial:
     - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
+    - {fileID: 2100000, guid: cad1a8e82730eec40b795c9297d8b42f, type: 2}
     enemyTeamMaterial:
-    - {fileID: 2100000, guid: ea9157c8db6921644be07793bd146448, type: 2}
-    - {fileID: 2100000, guid: 584abacfa4e32e24799fe949097a68e4, type: 2}
-    - {fileID: 2100000, guid: 4a81f39c3209538458870f38a664b622, type: 2}
-    name: 'Pawn - Alice - '
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    - {fileID: 2100000, guid: 05e374f270e5f31419510d08aea08047, type: 2}
+    name: Pawn - Alice - Tiger Lily
     AIAccessiblePosition: {x: 0, y: 0}
     hasMoved: 0
     thisObject: {fileID: 0}
@@ -2986,6 +3192,8 @@ MonoBehaviour:
     potentialRange: 1
     infinitelyScalingRange: 0
     currentRange: 8
+  usingIndex: 0
+  usePlayersTeam: 1
 --- !u!4 &1668135150654269378
 Transform:
   m_ObjectHideFlags: 0
@@ -3176,7 +3384,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -3235,7 +3444,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -3341,7 +3551,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -4211,61 +4422,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4691973394461292585}
   m_CullTransparentMesh: 1
---- !u!23 &3879843651801408344
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 25557877292272981}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 00b4427a675a1c74781e4f33d89a21cf, type: 2}
-  - {fileID: 2100000, guid: cde850dccefb4e54db34ce2e5a7a15d6, type: 2}
-  - {fileID: 2100000, guid: c1008887f8ff5d4478b4b3c39d623e2e, type: 2}
-  - {fileID: 2100000, guid: b44cbbe9c18ec1f42b8636e5e705743c, type: 2}
-  - {fileID: 2100000, guid: ae215eca1f76dae47af6b592f386aca0, type: 2}
-  - {fileID: 2100000, guid: 95a04476b8b5c8f41beb8afcacef10f8, type: 2}
-  - {fileID: 2100000, guid: 4145d6f7c1cc24840b63590fb5ec5cbd, type: 2}
-  - {fileID: 2100000, guid: f945b6748cea8014c93ef6d9315f069c, type: 2}
-  - {fileID: 2100000, guid: a65049abe4efd8c4088c8f74fcd8e590, type: 2}
-  - {fileID: 2100000, guid: 8f6b8e78ad397854a9894d4c5afc3e83, type: 2}
-  - {fileID: 2100000, guid: bfe0983283383074e896691d57c36d08, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &3989069826737840036
 GameObject:
   m_ObjectHideFlags: 0
@@ -4374,7 +4530,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -4574,7 +4731,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -4744,7 +4902,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -5128,7 +5287,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -5352,7 +5512,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -5502,7 +5663,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -5844,7 +6006,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -5896,7 +6059,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -6139,27 +6303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3db47b192deef74459084dd0545b8083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selected: 0
-  firstFrameSelected: 0
-  thisPiece:
-    verticalOffset: 0
-    playersTeamModel: {fileID: 0}
-    AITeamMesh: {fileID: 0}
-    playerTeamMaterial: []
-    enemyTeamMaterial: []
-    name: 
-    AIAccessiblePosition: {x: 0, y: 0}
-    hasMoved: 0
-    thisObject: {fileID: 0}
-    movableTiles1DArray: 000000000000000000
-    potentialRange: 0
-    infinitelyScalingRange: 0
-    currentRange: 8
-  capturedPieces: 0
-  level: 1
-  previousPosition: {x: 0, y: 0, z: 0}
-  hasMoved: 0
-  numberOfMoves: 3
+  numberOfMoves: 1
 --- !u!4 &6600351642808146151
 Transform:
   m_ObjectHideFlags: 0
@@ -6301,7 +6445,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -6616,7 +6761,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -6723,7 +6869,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -7166,6 +7313,7 @@ Transform:
   - {fileID: 417748097}
   - {fileID: 1667670619}
   - {fileID: 1326879460}
+  - {fileID: 1323189835}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &7985984239234115204
@@ -7643,7 +7791,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
@@ -7675,7 +7824,8 @@ MonoBehaviour:
   selected: 0
   firstFrameSelected: 0
   thisPiece:
-    verticalOffset: 0
+    playersTeamVerticalOffset: 0
+    AITeamVerticalOffset: 0
     playersTeamModel: {fileID: 0}
     AITeamMesh: {fileID: 0}
     playerTeamMaterial: []
