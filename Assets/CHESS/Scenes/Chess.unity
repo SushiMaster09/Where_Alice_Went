@@ -6324,6 +6324,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfMoves: 1
+  a: {fileID: 11400000, guid: c0858e8834b3cdc40bd41eee1de31421, type: 2}
+  b: {fileID: 11400000, guid: a974e31f6a56eb0469e3215021798046, type: 2}
 --- !u!4 &6600351642808146151
 Transform:
   m_ObjectHideFlags: 0

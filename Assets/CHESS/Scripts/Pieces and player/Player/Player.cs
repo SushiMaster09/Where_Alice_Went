@@ -7,14 +7,14 @@ namespace TC{
     public class Player : MonoBehaviour/* : UnderlyingPiece */{
         public static GameObject player;
         public int numberOfMoves;
-        //[SerializeField]
-        //RenderPipelineAsset a;
-        //[SerializeField]
-        //RenderPipelineAsset b;
+        [SerializeField]
+        RenderPipelineAsset a;
+        [SerializeField]
+        RenderPipelineAsset b;
 
         private void Awake() {
-            //    SwapRenderPipeline.pipeline2Dstat = a;
-            //    SwapRenderPipeline.ultraURPstat = b;
+                SwapRenderPipeline.pipeline2Dstat = a;
+                SwapRenderPipeline.ultraURPstat = b;
             SwapRenderPipeline.UltraAnd2D();
             if (player == null) {
                 player = gameObject;
