@@ -1386,7 +1386,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Where Alice Went
+  m_text: 'Where Did
+
+    Alice Go?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 34fa7cacef431c947b789a66fe6a8929, type: 2}
   m_sharedMaterial: {fileID: 4533603600454141963, guid: 34fa7cacef431c947b789a66fe6a8929, type: 2}
