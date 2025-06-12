@@ -7,6 +7,7 @@ public class PlayerShadow : MonoBehaviour
 
     void Update()
     {
-        gameObject.transform.position = new Vector3(player.position.x, Yoffset, player.position.z);
+        if (player && gameObject)
+            gameObject.transform.position = new Vector3(player.position.x, Yoffset, player.position.z);
     }
 }
