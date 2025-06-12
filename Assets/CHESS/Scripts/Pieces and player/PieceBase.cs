@@ -60,7 +60,7 @@ namespace TC {
             }
         }
 
-        void LateUpdate() {
+        void Update() {
             if (mode == Mode.levelling) {
                 base.IfNotLevellingReturn();
                 selected = true;

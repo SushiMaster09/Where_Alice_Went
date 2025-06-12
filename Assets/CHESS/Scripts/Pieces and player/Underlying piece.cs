@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,28 +22,34 @@ namespace TC{
         public bool hasMoved = false;
 
         public const int pieceHeight = 2;
-        private void Awake() {
-            playersTeam = Random.Range(0, 2) < 0.5f;
-        }
         private void Start() {
             previousFrame = thisPiece.moveableTiles;
             ActualStart();
         }
         public void ActualStart() {
-            for (int i = 0; i < OverarchingPieceMovement.Instance.allPieceMovement.Count; i++) {
+            /*for (int i = 0; i < OverarchingPieceMovement.Instance.allPieceMovement.Count; i++) {
                 PieceMovement piece = OverarchingPieceMovement.Instance.allPieceMovement[i];
                 if (piece.name == name) {
                     thisPiece = new PieceMovement(i, playersTeam, this);
                     return;
                 }
+            }*/
+            int randomNumber = OverarchingPieceMovement.Instance.usingIndex;
+            if (OverarchingPieceMovement.Instance.usePlayersTeam) {
+                playersTeam = true;
+                OverarchingPieceMovement.Instance.usePlayersTeam = false;
             }
-            int randomNumber = Random.Range(1, OverarchingPieceMovement.Instance.allPieceMovement.Count);
+            else {
+                playersTeam = false;
+                OverarchingPieceMovement.Instance.usePlayersTeam = true;
+            }
             thisPiece = new PieceMovement(randomNumber, playersTeam, this);
             if (playersTeam) {
                 GetComponent<CapsuleCollider>().center = new Vector3(0, -thisPiece.playersTeamVerticalOffset, 0);
             }
             else {
                 GetComponent<CapsuleCollider>().center = new Vector3(0, -thisPiece.AITeamVerticalOffset, 0);
+                OverarchingPieceMovement.Instance.usingIndex++;
             }
         }
 
@@ -186,24 +193,30 @@ namespace TC{
                                 for (int z = -1; z <= 1; z++) {
                                     if (thisPiece.PositionIsUnlocked(x, z)) {
                                         for (int i = 1; i < thisPiece.potentialRange; i++) {
-                                            if (CubeBase.GetSquareInDirection(transform.position, x * i, z * i) != null && PieceInDirection(x * i, z * i) == null) {
-                                                movableTiles.Add(MoveableDisplays.Instance.GetObject());
-                                                movableTiles[count].SetActive(true);
-                                                movableTiles[count].GetComponent<MovementCircles>().OriginalObject = gameObject;
-                                                movableTiles[count].GetComponent<MovementCircles>().offset = new Vector2Int(x, z) * i;
-                                                movableTiles[count].transform.position = new Vector3(transform.position.x + x * i, 1.1f, transform.position.z + z * i);
-                                                count++;
+                                            try {
+                                                if (CubeBase.GetSquareInDirection(transform.position, x * i, z * i) != null && PieceInDirection(x * i, z * i) == null) {
+                                                    movableTiles.Add(MoveableDisplays.Instance.GetObject());
+                                                    movableTiles[count].SetActive(true);
+                                                    movableTiles[count].GetComponent<MovementCircles>().OriginalObject = gameObject;
+                                                    movableTiles[count].GetComponent<MovementCircles>().offset = new Vector2Int(x, z) * i;
+                                                    movableTiles[count].transform.position = new Vector3(transform.position.x + x * i, 1.1f, transform.position.z + z * i);
+                                                    count++;
+                                                }
+                                                else if (CubeBase.GetSquareInDirection(transform.position, x * i, z * i) != null && PieceInDirection(x * i, z * i).GetComponent<UnderlyingPiece>().playersTeam == false) {
+                                                    movableTiles.Add(MoveableDisplays.Instance3.GetObject());
+                                                    movableTiles[count].SetActive(true);
+                                                    movableTiles[count].GetComponent<MovementCircles>().OriginalObject = gameObject;
+                                                    movableTiles[count].GetComponent<MovementCircles>().offset = new Vector2Int(x, z) * i;
+                                                    movableTiles[count].transform.position = new Vector3(transform.position.x + x * i, 1.1f, transform.position.z + z * i);
+                                                    count++;
+                                                }
+                                                else {
+                                                    break;
+                                                }
                                             }
-                                            else if (CubeBase.GetSquareInDirection(transform.position, x * i, z * i) != null && PieceInDirection(x * i, z * i).GetComponent<UnderlyingPiece>().playersTeam == false) {
-                                                movableTiles.Add(MoveableDisplays.Instance3.GetObject());
-                                                movableTiles[count].SetActive(true);
-                                                movableTiles[count].GetComponent<MovementCircles>().OriginalObject = gameObject;
-                                                movableTiles[count].GetComponent<MovementCircles>().offset = new Vector2Int(x, z) * i;
-                                                movableTiles[count].transform.position = new Vector3(transform.position.x + x * i, 1.1f, transform.position.z + z * i);
-                                                count++;
-                                            }
-                                            else {
-                                                break;
+                                            catch (NullReferenceException e) {
+                                                Debug.Log(PieceInDirection(x * i, z * i));
+                                                throw e;
                                             }
                                             try {
                                                 if (!PieceInDirection(x * i, z * i).GetComponent<UnderlyingPiece>().playersTeam) {
@@ -224,21 +237,27 @@ namespace TC{
                             }*/
                             for (int x = -thisPiece.potentialRange; x <= thisPiece.potentialRange; x++) {
                                 for (int z = -thisPiece.potentialRange; z <= thisPiece.potentialRange; z++) {
-                                    if (thisPiece.PositionIsUnlocked(x, z) && PieceInDirection(x, z) == null) {
-                                        movableTiles.Add(MoveableDisplays.Instance.GetObject());
-                                        movableTiles[count].SetActive(true);
-                                        movableTiles[count].GetComponent<MovementCircles>().OriginalObject = gameObject;
-                                        movableTiles[count].GetComponent<MovementCircles>().offset = new Vector2Int(x, z);
-                                        movableTiles[count].transform.position = new Vector3(transform.position.x + x, 1.1f, transform.position.z + z);
-                                        count++;
+                                    try {
+                                        if (thisPiece.PositionIsUnlocked(x, z) && PieceInDirection(x, z) == null) {
+                                            movableTiles.Add(MoveableDisplays.Instance.GetObject());
+                                            movableTiles[count].SetActive(true);
+                                            movableTiles[count].GetComponent<MovementCircles>().OriginalObject = gameObject;
+                                            movableTiles[count].GetComponent<MovementCircles>().offset = new Vector2Int(x, z);
+                                            movableTiles[count].transform.position = new Vector3(transform.position.x + x, 1.1f, transform.position.z + z);
+                                            count++;
+                                        }
+                                        else if (thisPiece.PositionIsUnlocked(x, z) && !PieceInDirection(x, z).GetComponent<UnderlyingPiece>().playersTeam) {
+                                            movableTiles.Add(MoveableDisplays.Instance3.GetObject());
+                                            movableTiles[count].SetActive(true);
+                                            movableTiles[count].GetComponent<MovementCircles>().OriginalObject = gameObject;
+                                            movableTiles[count].GetComponent<MovementCircles>().offset = new Vector2Int(x, z);
+                                            movableTiles[count].transform.position = new Vector3(transform.position.x + x, 1.1f, transform.position.z + z);
+                                            count++;
+                                        }
                                     }
-                                    else if (thisPiece.PositionIsUnlocked(x, z) && !PieceInDirection(x, z).GetComponent<UnderlyingPiece>().playersTeam) {
-                                        movableTiles.Add(MoveableDisplays.Instance3.GetObject());
-                                        movableTiles[count].SetActive(true);
-                                        movableTiles[count].GetComponent<MovementCircles>().OriginalObject = gameObject;
-                                        movableTiles[count].GetComponent<MovementCircles>().offset = new Vector2Int(x, z);
-                                        movableTiles[count].transform.position = new Vector3(transform.position.x + x, 1.1f, transform.position.z + z);
-                                        count++;
+                                    catch (NullReferenceException e) {
+                                        Debug.Log(PieceInDirection(x, z));
+                                        throw e;
                                     }
                                 }
                             }

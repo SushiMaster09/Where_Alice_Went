@@ -58,6 +58,7 @@ namespace TC{
             inheritingPiece = OverarchingPieceMovement.Instance.allPieceMovement[position];
             playersTeamVerticalOffset = inheritingPiece.playersTeamVerticalOffset;
             AITeamVerticalOffset = inheritingPiece.AITeamVerticalOffset;
+            AITeamMesh = inheritingPiece.AITeamMesh;
             #region Assign all variables other than the 2D array
             playersTeamModel = inheritingPiece.playersTeamModel;
             playerTeamMaterial = inheritingPiece.playerTeamMaterial;

@@ -13,7 +13,7 @@ namespace TC{
         // Start is called once before the first execution of Update after the MonoBehaviour is created
 
         // Update is called once per frame
-        void FixedUpdate() {
+        void Update() {
             if (mode == Mode.gaming) {
                 FaceCamera(followTarget.transform.position);
                 if (Input.GetMouseButton(1)) {

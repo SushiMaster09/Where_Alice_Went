@@ -6,6 +6,7 @@ using System.Data;
 using System.Threading.Tasks;
 using UnityEngine.SceneManagement;
 using System.Threading;
+using Unity.VisualScripting;
 
 namespace TC {
     public class AI : MonoBehaviour {
@@ -14,8 +15,6 @@ namespace TC {
         public List<PieceMovement> PlayersTeam;
         public List<PieceMovement> AITeam;
         bool firstFrame = true;
-        (UnderlyingPiece, Vector2Int) secondMove;
-        (UnderlyingPiece, Vector2Int) thirdMove;
         int numOfAI;
         int numOfPlayers;
 
@@ -54,15 +53,14 @@ namespace TC {
             return evaluation;
         }
 
-        int bestSecondMoveEval;
         (int, Vector2Int, UnderlyingPiece) Search(int depth, float alpha, float beta, int startingDepth, Gamestate gamestate) {
             //create a new class where the gamestate can be saved - things like a 200 by 200 board state and a piece list for each team
             Vector2Int bestPosition = Vector2Int.zero;
             depth -= 1;
-            bool AITurn = (startingDepth - depth) / 3 % 2 == 0;
+            bool AITurn = (startingDepth - depth) % 2 == 0;
             int bestEvaluation = AITurn ? int.MinValue : int.MaxValue;
             UnderlyingPiece bestPiece = null;
-            if (numOfTimesValidMoveCacheRefreshed != (int)(startingDepth - depth) / 6) {
+            if (numOfTimesValidMoveCacheRefreshed <= (int)(startingDepth - depth) / 2) {
                 numOfTimesValidMoveCacheRefreshed++;
                 foreach (PieceMovement pieceMovement in AITeam) {
                     validMoveCache[pieceMovement.name] = ValidMoves(pieceMovement);
@@ -74,7 +72,6 @@ namespace TC {
             int count = 0;
             IEnumerable<PieceMovement> usedMovement = AITurn ? gamestate.AITeam.Where(piece => piece.hasMoved == false) : gamestate.playersTeam;
             if (depth - startingDepth == 0) {
-                Debug.Log(Evaluation(gamestate));
                 //one of the three AI turn moves
                 Parallel.ForEach(usedMovement, (movement, parallelLoopsState) => {
                     Gamestate usedGamestate = new(gamestate);
@@ -139,14 +136,6 @@ namespace TC {
                                     bestEvaluation = aSearch.Item1;
                                     bestPiece = movement.thisObject;
                                     bestPosition = move;
-                                    if (depth == startingDepth) {
-                                        secondMove = (aSearch.Item3, aSearch.Item2);
-                                    }
-                                    if (depth == startingDepth - 1 && bestSecondMoveEval < bestEvaluation) {
-                                        Debug.Log(bestEvaluation);
-                                        bestSecondMoveEval = bestEvaluation;
-                                        thirdMove = (bestPiece, aSearch.Item2);
-                                    }
                                 }
                                 alpha = Math.Max(alpha, bestEvaluation);
                             }
@@ -235,13 +224,6 @@ namespace TC {
                                     bestEvaluation = aSearch.Item1;
                                     bestPiece = movement.thisObject;
                                     bestPosition = move;
-                                    if (depth == startingDepth) {
-                                        secondMove = (aSearch.Item3, aSearch.Item2);
-                                    }
-                                    if (depth == startingDepth - 1 && bestSecondMoveEval < bestEvaluation) {
-                                        bestSecondMoveEval = bestEvaluation;
-                                        thirdMove = (bestPiece, aSearch.Item2);
-                                    }
                                 }
                                 alpha = Math.Max(alpha, bestEvaluation);
                             }
@@ -315,13 +297,13 @@ namespace TC {
             if (capturingPiece != null) {
                 if (AITurn) {
                     gamestate.playersTeam.Add(capturingPiece);
-                    if (numOfPlayers != PlayersTeam.Count) {
+                    if (numOfPlayers < PlayersTeam.Count) {
                         throw new Exception(capturingPiece.name + " Added over and above the rest");
                     }
                 }
                 else {
                     gamestate.AITeam.Add(capturingPiece);
-                    if (numOfAI != AITeam.Count) {
+                    if (numOfAI < AITeam.Count) {
                         throw new Exception(capturingPiece.name + " Added over and above the rest");
                     }
                 }
@@ -334,7 +316,12 @@ namespace TC {
             if (movement == null) {
                 return 0;
             }
-            pieceName = movement.inheritingPiece.name;
+            try {
+                pieceName = movement.inheritingPiece.name[0..movement.inheritingPiece.name.IndexOf(" ")];
+            }
+            catch {
+                pieceName = movement.inheritingPiece.name;
+            }
             int returningInt = 0;
             return pieceName switch {
                 "Rook" => 500 + returningInt,
@@ -342,13 +329,7 @@ namespace TC {
                 "Knight" => 300 + returningInt,
                 "Pawn" => 100 + returningInt,
                 "Queen" => 900 + returningInt,
-                "Peanut" => 100 + returningInt,
-                "Wisp" => 100 + returningInt,
-                "Player" => 200 + returningInt,
-                "Elephant" => 100 + returningInt,
-                "Snail" => 100 + returningInt,
-                "Lightning bolt" => 100 + returningInt,
-                "Pedestal" => 100 + returningInt,
+                "King" => 5000 + returningInt,
                 _ => throw new KeyNotFoundException("name not found: " + pieceName),
             };
         }
@@ -406,20 +387,16 @@ namespace TC {
             foreach (PieceMovement piece in AITeam.Where(piece => piece == null)) {
                 AITeam.Remove(piece);
             }
-            bestSecondMoveEval = int.MinValue;
-            int searchDepth = 1;
-            int numberOfMoves = 3;
+            int searchDepth = 3;
+            int numberOfMoves = 1;
             //for (int i = numberOfMoves; i >= 1; i--) {
             var evaluatedPieceAndMovement = Search(searchDepth + numberOfMoves, Mathf.NegativeInfinity, Mathf.Infinity, searchDepth + numberOfMoves - 1, new Gamestate(gamestate));
-            Debug.Log(evaluatedPieceAndMovement.Item1);
             ExecuteMove(evaluatedPieceAndMovement.Item3, evaluatedPieceAndMovement.Item2);
-            ExecuteMove(secondMove.Item1, secondMove.Item2);
-            ExecuteMove(thirdMove.Item1, thirdMove.Item2);
 
             foreach (PieceMovement piece in PlayersTeam.Where(piece => piece.thisObject.hasMoved)) {
                 piece.thisObject.hasMoved = false;
             }
-            Player.player.GetComponent<Player>().numberOfMoves = 3;
+            Player.player.GetComponent<Player>().numberOfMoves = 1;
         }
     }
 }

@@ -26,7 +26,7 @@ namespace TC {
         }
 
         public Gamestate(List<PieceMovement> playersTeam, List<PieceMovement> AITeam) {
-            if (board == null) {
+            /*if (board == null) {
                 board = new bool[201, 201];
                 for (int i = -OriginCube.MaxSizeOfBoard; i <= OriginCube.MaxSizeOfBoard; i++) {
                     for (int j = -OriginCube.MaxSizeOfBoard; j <= OriginCube.MaxSizeOfBoard; j++) {
@@ -38,7 +38,7 @@ namespace TC {
                         }
                     }
                 }
-            }
+            }*/
             try {
                 this.playersTeam = new List<PieceMovement>(playersTeam);
                 this.AITeam = new List<PieceMovement>(AITeam);
@@ -53,7 +53,7 @@ namespace TC {
         }
         public PieceMovement PieceInPosition(Vector2Int position) {
             PieceMovement objecta = null;
-            if (position.x < OriginCube.MaxSizeOfBoard + 1 && position.y < OriginCube.MaxSizeOfBoard + 1 && position.x > -OriginCube.MaxSizeOfBoard + 1 && position.y > -OriginCube.MaxSizeOfBoard + 1) {
+            if (position.x < OriginCube.MaxSizeOfBoard && position.y < OriginCube.MaxSizeOfBoard && position.x > -OriginCube.MaxSizeOfBoard && position.y > -OriginCube.MaxSizeOfBoard) {
                 if (piecesOnBoard[position.x + OriginCube.MaxSizeOfBoard, position.y + OriginCube.MaxSizeOfBoard] != null) {
                     objecta = piecesOnBoard[position.x + OriginCube.MaxSizeOfBoard, position.y + OriginCube.MaxSizeOfBoard];
                 }

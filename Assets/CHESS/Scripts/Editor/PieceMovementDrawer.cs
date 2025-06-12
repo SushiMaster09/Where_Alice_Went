@@ -18,8 +18,7 @@ public class PieceMovementAttributes : PropertyDrawer {
             height += FOLDOUT_HEIGHT;
             //gameobject
             height += FOLDOUT_HEIGHT;
-            height += FOLDOUT_HEIGHT;
-            height += FOLDOUT_HEIGHT;
+            //vertical offset
             height += FOLDOUT_HEIGHT;
             //Allied Material
             height += FOLDOUT_HEIGHT;
@@ -28,6 +27,10 @@ public class PieceMovementAttributes : PropertyDrawer {
                     height += 30;
                 }
             }
+            //ai vertical offset
+            height += FOLDOUT_HEIGHT;
+            //mesh
+            height += FOLDOUT_HEIGHT;
             //Enemy material
             height += FOLDOUT_HEIGHT;
             if (property.FindPropertyRelative("enemyTeamMaterial").isExpanded) {
