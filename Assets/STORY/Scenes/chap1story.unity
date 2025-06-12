@@ -370,7 +370,7 @@ MonoBehaviour:
   hasEmotionTag: 0
   isTyping: 0
   fading: 0
-  JSONAsset: {fileID: 4900000, guid: 2ef3dff43934146c8b550ae813f46b30, type: 3}
+  JSONAsset: {fileID: 4900000, guid: 2b9ffef65f5012740a9355e861e00c44, type: 3}
   canvasGroup2: {fileID: 1035403993}
   audioSource: {fileID: 421530173}
   audioSource2: {fileID: 421530174}

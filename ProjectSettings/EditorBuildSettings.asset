@@ -12,14 +12,17 @@ EditorBuildSettings:
     path: Assets/GAME/Scenes/Menus/CharSelect.unity
     guid: 67e149145bd9f774aba85433fb0c2b35
   - enabled: 1
-    path: Assets/STORY/Scenes/maingame.unity
+    path: Assets/STORY/Scenes/prologuestory.unity
+    guid: c9f66e2ff0c67044f813e429648f37e8
+  - enabled: 1
+    path: Assets/GAME/Scenes/Menus/ChapSelect.unity
+    guid: 1c469bcd3bb92cc4f9c54a6743b25ba6
+  - enabled: 1
+    path: Assets/STORY/Scenes/chap1story.unity
     guid: 20c3da6bd3ee0844b837ed0ec9aec6f2
   - enabled: 1
     path: Assets/GAME/Scenes/Levels/Chapter1.unity
     guid: 3a4b9265902746f4aa24902d579cf836
-  - enabled: 1
-    path: Assets/STORY/Scenes/maingame2.unity
-    guid: c9f66e2ff0c67044f813e429648f37e8
   - enabled: 1
     path: Assets/CHESS/Scenes/Chess.unity
     guid: 03d59171e3aac9a44a8c491009d8980d
