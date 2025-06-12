@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 namespace TC{
 
@@ -31,7 +32,19 @@ namespace TC{
 
         void FixedUpdate() {
             if (numberOfMoves == 0) {
-                AI.ai.BeginTurn();
+                bool gameFinished = true;
+                foreach (PieceMovement thing in AI.ai.AITeam) {
+                    if (thing.name.Contains("King")) {
+                        gameFinished = false;
+                    }
+                }
+                if (gameFinished) {
+                    AI.difficulty += 1;
+                    SceneManager.LoadScene("ChapSelect");
+                }
+                else {
+                    AI.ai.BeginTurn();
+                }
             }
             /*if (mode == Mode.levelling) {
                 IfNotLevellingReturn();

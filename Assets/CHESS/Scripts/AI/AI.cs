@@ -15,6 +15,7 @@ namespace TC {
         public List<PieceMovement> PlayersTeam;
         public List<PieceMovement> AITeam;
         bool firstFrame = true;
+        public static int difficulty;
         int numOfAI;
         int numOfPlayers;
 
@@ -387,7 +388,7 @@ namespace TC {
             foreach (PieceMovement piece in AITeam.Where(piece => piece == null)) {
                 AITeam.Remove(piece);
             }
-            int searchDepth = 3;
+            int searchDepth = 1 + difficulty * 2;
             int numberOfMoves = 1;
             //for (int i = numberOfMoves; i >= 1; i--) {
             var evaluatedPieceAndMovement = Search(searchDepth + numberOfMoves, Mathf.NegativeInfinity, Mathf.Infinity, searchDepth + numberOfMoves - 1, new Gamestate(gamestate));
