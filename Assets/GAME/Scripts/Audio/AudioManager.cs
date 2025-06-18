@@ -15,12 +15,6 @@ public class AudioManager : MonoBehaviour
     public AudioClip jump;
     public AudioClip slash;
 
-    private void Start()
-    {
-        musicSource.clip = background;
-        musicSource.Play();
-    }
-
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -34,6 +28,14 @@ public class AudioManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
     }
+    
+    private void Start()
+    {
+        musicSource.clip = background;
+        musicSource.Play();
+    }
+
+   
 
     public void PlaySFX(AudioClip clip)
     {

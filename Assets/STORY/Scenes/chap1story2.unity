@@ -1479,6 +1479,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8070397097589301599, guid: 428ba8c4ff47b1b4db8ca33be6922fd8, type: 3}
+      propertyPath: connection
+      value: 
+      objectReference: {fileID: 11400000, guid: 598a581ad7be44b2dbae675e26c441fc, type: 2}
+    - target: {fileID: 8070397097589301599, guid: 428ba8c4ff47b1b4db8ca33be6922fd8, type: 3}
+      propertyPath: targetSceneName
+      value: chap1story1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7306412684883143353, guid: 428ba8c4ff47b1b4db8ca33be6922fd8, type: 3}
