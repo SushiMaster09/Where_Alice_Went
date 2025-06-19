@@ -59,8 +59,14 @@ namespace TC {
                 base.previousPosition = new Vector3(newX, 2 + thisPiece.AITeamVerticalOffset, newZ);
             }
         }
-
+        bool stopFindingStartPosition = false;
         void Update() {
+            if (PieceInDirection(0, 0) != gameObject && !stopFindingStartPosition) {
+                FindStartPosition();
+            }
+            else {
+                stopFindingStartPosition = true;
+            }
             if (mode == Mode.levelling) {
                 base.IfNotLevellingReturn();
                 selected = true;

@@ -238,7 +238,7 @@ namespace TC{
                             for (int x = -thisPiece.potentialRange; x <= thisPiece.potentialRange; x++) {
                                 for (int z = -thisPiece.potentialRange; z <= thisPiece.potentialRange; z++) {
                                     try {
-                                        if (thisPiece.PositionIsUnlocked(x, z) && PieceInDirection(x, z) == null) {
+                                        if (CubeBase.GetSquareInDirection(transform.position, x, z) != null && thisPiece.PositionIsUnlocked(x, z) && PieceInDirection(x, z) == null) {
                                             movableTiles.Add(MoveableDisplays.Instance.GetObject());
                                             movableTiles[count].SetActive(true);
                                             movableTiles[count].GetComponent<MovementCircles>().OriginalObject = gameObject;
@@ -246,7 +246,7 @@ namespace TC{
                                             movableTiles[count].transform.position = new Vector3(transform.position.x + x, 1.1f, transform.position.z + z);
                                             count++;
                                         }
-                                        else if (thisPiece.PositionIsUnlocked(x, z) && !PieceInDirection(x, z).GetComponent<UnderlyingPiece>().playersTeam) {
+                                        else if (CubeBase.GetSquareInDirection(transform.position, x, z) != null && thisPiece.PositionIsUnlocked(x, z) && !PieceInDirection(x, z).GetComponent<UnderlyingPiece>().playersTeam) {
                                             movableTiles.Add(MoveableDisplays.Instance3.GetObject());
                                             movableTiles[count].SetActive(true);
                                             movableTiles[count].GetComponent<MovementCircles>().OriginalObject = gameObject;

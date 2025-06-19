@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
-namespace TC{
+namespace TC {
 
     public class Player : MonoBehaviour/* : UnderlyingPiece */{
         public static GameObject player;
@@ -13,8 +13,8 @@ namespace TC{
         RenderPipelineAsset b;
 
         private void Awake() {
-                SwapRenderPipeline.pipeline2Dstat = a;
-                SwapRenderPipeline.ultraURPstat = b;
+            SwapRenderPipeline.pipeline2Dstat = a;
+            SwapRenderPipeline.ultraURPstat = b;
             SwapRenderPipeline.UltraAnd2D();
             if (player == null) {
                 player = gameObject;
