@@ -6,7 +6,6 @@ using System.Data;
 using System.Threading.Tasks;
 using UnityEngine.SceneManagement;
 using System.Threading;
-using Unity.VisualScripting;
 
 namespace TC {
     public class AI : MonoBehaviour {
