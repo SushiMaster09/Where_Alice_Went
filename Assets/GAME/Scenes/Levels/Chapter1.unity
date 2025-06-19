@@ -2717,7 +2717,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 48.659985, y: -1.3603001, z: -10}
+  m_LocalPosition: {x: 48.61339, y: -1.3603001, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3256,7 +3256,7 @@ MonoBehaviour:
   interactAction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 583843464}
+      - m_Target: {fileID: 5742981925900165351, guid: ed36f9f41f1ccea40948a453f577e98b, type: 3}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -3560,23 +3560,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &583843461 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5920215719748754270, guid: ed36f9f41f1ccea40948a453f577e98b, type: 3}
-  m_PrefabInstance: {fileID: 2033048646}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &583843464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 583843461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c40bbc1f7b26a994f84cc6359a56278d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &584656310
 GameObject:
   m_ObjectHideFlags: 0
@@ -12742,14 +12725,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 553409836274370818, guid: ed36f9f41f1ccea40948a453f577e98b, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 553409836274370818, guid: ed36f9f41f1ccea40948a453f577e98b, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3171334230994218819, guid: ed36f9f41f1ccea40948a453f577e98b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -12790,14 +12765,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4739680044873694325, guid: ed36f9f41f1ccea40948a453f577e98b, type: 3}
-      propertyPath: m_Volume
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4739680044873694325, guid: ed36f9f41f1ccea40948a453f577e98b, type: 3}
-      propertyPath: BypassReverbZones
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5920215719748754270, guid: ed36f9f41f1ccea40948a453f577e98b, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -12805,10 +12772,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5920215719748754270, guid: ed36f9f41f1ccea40948a453f577e98b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 583843464}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed36f9f41f1ccea40948a453f577e98b, type: 3}
 --- !u!1 &2037727580
 GameObject:

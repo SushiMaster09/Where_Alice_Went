@@ -344,7 +344,7 @@ namespace TC {
             }
             if (AITeam.Count < 5) {
 
-                SceneManager.LoadScene("You win");
+                SceneManager.LoadScene("ChapSelect");
             }
         }
 

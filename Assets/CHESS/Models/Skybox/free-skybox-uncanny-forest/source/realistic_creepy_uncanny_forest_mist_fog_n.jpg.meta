@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      realistic_creepy_uncanny_forest_mist_fog_n_0: 6034814963926222373
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
